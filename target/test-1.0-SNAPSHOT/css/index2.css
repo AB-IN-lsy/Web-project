@@ -145,13 +145,8 @@ div#black_overlay {
     width: 100%;
     height: 100%;
     z-index: 10000;
-    background: url(black.png);
     cursor: pointer;
     display: none;
-}
-
-.loader-img {
-    background: transparent url(../resources/images/loading.gif) no-repeat center center
 }
 
 html, body {

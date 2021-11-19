@@ -27,7 +27,6 @@ nav .Inav {
     top: 0px;
     height: 100%;
     width: 256px;
-    background: url(../resources/images/banner_bg.png);
 }
 
 .bannerBase .tools a {
@@ -198,7 +197,6 @@ nav .Inav {
 .NewsBase .tools a:hover img {
     animation: tada .88s cubic-bezier(0.175, 0.885, 0.320, 1.5) 1;
     -webkit-animation: tada .88s cubic-bezier(0.175, 0.885, 0.320, 1.5) 1;
-    -moz-animation-name: tada .88s cubic-bezier(0.175, 0.885, 0.320, 1.5) 1;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -1045,7 +1043,6 @@ nav .Inav {
     height: 35px;
     color: #fff;
     line-height: 35px;
-    background: url(../resources/images/bg02.png);
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -1100,7 +1097,6 @@ nav .Inav {
     margin-top: 5px;
     padding-left: 23px;
     color: #333;
-    background: url(../resources/images/ico_038.jpg) left center no-repeat;
 }
 
 .othersBase .left a {
@@ -1382,7 +1378,6 @@ nav .Inav {
 
     .bannerBase .tools {
         right: -200px;
-        background: #6bcbca url(../resources/images/banner_bg.png);
     }
 
     .NewsBase .tools {
