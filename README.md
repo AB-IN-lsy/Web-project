@@ -8,7 +8,7 @@
 >
 > [宝塔war包放入webapps无法访问_NEFU AB-IN's Blog-CSDN博客](https://blog.csdn.net/qq_45859188/article/details/121353247)
 
-[![GPLV3 License](https://img.shields.io/badge/Licence-GPLV3-green.svg?style=flat)](https://github.com/AB-IN-lsy/web-project/blob/master/LICENSE) [![Home page](https://img.shields.io/badge/home-page-yellow.svg?style=flat)](https://web.ab-in.cn/project) <a href="https://github.com/AB-IN-lsy/web-project/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AB-IN-lsy/web-project"></a>
+[![Blog page](https://img.shields.io/badge/Blog-page-red.svg?style=flat)](https://www.ab-in.cn) [![GPLV3 License](https://img.shields.io/badge/Licence-GPLV3-green.svg?style=flat)](https://github.com/AB-IN-lsy/web-project/blob/master/LICENSE) [![Home page](https://img.shields.io/badge/home-page-yellow.svg?style=flat)](https://web.ab-in.cn/project/index) <a href="https://github.com/AB-IN-lsy/web-project/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AB-IN-lsy/web-project"></a>
 
 * ### <font color=#000000 size=4 face=粗体>项目要求</font>
 
