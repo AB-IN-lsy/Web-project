@@ -1,4 +1,113 @@
-﻿(function ($) {
+﻿(function (a) {
+    function d(b) {
+        var c = b || window.event, d = [].slice.call(arguments, 1), e = 0, f = !0, g = 0, h = 0;
+        return b = a.event.fix(c), b.type = "mousewheel", c.wheelDelta && (e = c.wheelDelta / 120), c.detail && (e = -c.detail / 3), h = e, c.axis !== undefined && c.axis === c.HORIZONTAL_AXIS && (h = 0, g = -1 * e), c.wheelDeltaY !== undefined && (h = c.wheelDeltaY / 120), c.wheelDeltaX !== undefined && (g = -1 * c.wheelDeltaX / 120), d.unshift(b, e, g, h), (a.event.dispatch || a.event.handle).apply(this, d)
+    }
+
+    var b = ["DOMMouseScroll", "mousewheel"];
+    if (a.event.fixHooks) for (var c = b.length; c;) a.event.fixHooks[b[--c]] = a.event.mouseHooks;
+    a.event.special.mousewheel = {
+        setup: function () {
+            if (this.addEventListener) for (var a = b.length; a;) this.addEventListener(b[--a], d, !1); else this.onmousewheel = d
+        }, teardown: function () {
+            if (this.removeEventListener) for (var a = b.length; a;) this.removeEventListener(b[--a], d, !1); else this.onmousewheel = null
+        }
+    }, a.fn.extend({
+        mousewheel: function (a) {
+            return a ? this.bind("mousewheel", a) : this.trigger("mousewheel")
+        }, unmousewheel: function (a) {
+            return this.unbind("mousewheel", a)
+        }
+    })
+})(KunyiLibrary);
+;(function ($) {
+    var selectors = [];
+    var check_binded = false;
+    var check_lock = false;
+    var defaults = {interval: 250, force_process: false};
+    var $window = $(window);
+    var $prior_appeared;
+
+    function process() {
+        check_lock = false;
+        for (var index = 0; index < selectors.length; index++) {
+            var $appeared = $(selectors[index]).filter(function () {
+                return $(this).is(':appeared')
+            });
+            $appeared.trigger('appear', [$appeared]);
+            if ($prior_appeared) {
+                var $disappeared = $prior_appeared.not($appeared);
+                $disappeared.trigger('disappear', [$disappeared])
+            }
+            $prior_appeared = $appeared
+        }
+    }
+
+    $.expr[':']['appeared'] = function (element) {
+        var $element = $(element);
+        if (!$element.is(':visible')) {
+            return false
+        }
+        var window_left = $window.scrollLeft();
+        var window_top = $window.scrollTop();
+        var offset = $element.offset();
+        var left = offset.left;
+        var top = offset.top;
+        if (top + $element.height() >= window_top && top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() && left + $element.width() >= window_left && left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
+            return true
+        } else {
+            return false
+        }
+    };
+    $.fn.extend({
+        appear: function (options) {
+            var opts = $.extend({}, defaults, options || {});
+            var selector = this.selector || this;
+            if (!check_binded) {
+                var on_check = function () {
+                    if (check_lock) {
+                        return
+                    }
+                    check_lock = true;
+                    window.setTimeout(process, opts.interval)
+                };
+                $(window).scroll(on_check).resize(on_check);
+                check_binded = true
+            }
+            if (opts.force_process) {
+                window.setTimeout(process, opts.interval)
+            }
+            selectors.push(selector);
+            return $(selector)
+        }
+    });
+    $.extend({
+        force_appear: function () {
+            if (check_binded) {
+                process();
+                return true
+            }
+            ;
+            return false
+        }
+    })
+})(KunyiLibrary);
+;(function ($) {
+    $.fn.scrollToFade = function () {
+        $(this).each(function () {
+            $(this).addClass('be-animating-hide')
+        })
+    };
+    $(window).on('scroll', function () {
+        var win_st = $(this).scrollTop();
+        $('.be-animating-hide').each(function () {
+            var offset = $(this).offset().top;
+            var opacity = 0.7 - ((win_st - offset) / $(this).height());
+            $(this).css('opacity', opacity)
+        })
+    })
+}(KunyiLibrary));
+;(function ($) {
     var $window = $(window);
     var windowHeight = $window.height();
     $window.resize(function () {
@@ -454,7 +563,7 @@ Kunyi = {
             } else if (type == 2) {
                 Kunyi.Msg.MsgTips(time, msg, 518, 'error'); //头部提示,1、success 2、error 3、warning
             } else if (type == 3) {
-                Kunyi.Msg.MsgTips(time, msg, 518, 'warning'); //头部提示,1、success 2、error 3、warning 
+                Kunyi.Msg.MsgTips(time, msg, 518, 'warning'); //头部提示,1、success 2、error 3、warning
             }
         },
         MsgTips: function (timeOut, msg, speed, type) {
@@ -697,4 +806,46 @@ $(function () {
 $__W.resize(function () {
     $("#QRMark").css("top", "0px");
     $("#QRBase").css("height", "1px");
+});
+$__W.load(function () {
+    Kunyi.IsFinish = true;
+    Kunyi.InitFun();
+    $("img.load").lazyload({
+        placeholder: "js/grey.gif",
+        effect: "fadeIn"
+    });
+    $("#ddlYears").change(function (e) {
+        $t = $(this);
+        var obj = $(this).get(0);
+        var year = obj.options[obj.selectedIndex].value;
+        $ddlTimes = $("#ddlTimes");
+        if (year != "0") {
+            $.ajax({
+                type: "post",
+                dataType: "json",
+                url: "DoPostBack/GetTimesByYear.ashx",
+                data: {year: year},
+                beforeSend: function () {
+                    $ddlTimes.html("<option value=\"0\">选择期数</option>");
+                },
+                complete: function () {
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                },
+                success: function (msg) {
+                    for (var i = 0; i < msg.length; i++) {
+                        $ddlTimes.append("<option value=\"" + msg[i].times + "\">第" + msg[i].times + "期</option>");
+                    }
+                }
+            });
+        } else {
+            $("#ddlTimes").html("<option value=\"0\">选择期数</option>");
+        }
+    });
+    $("#btnGoNewsPaper").click(function () {
+        if ($("#ddlTimes").val() != null && $("#ddlTimes").val() != "0") {
+            var str = "Newspaper-" + $("#ddlYears").val() + "-" + $("#ddlTimes").val() + ".html";
+            window.location.href = str;
+        }
+    });
 });
