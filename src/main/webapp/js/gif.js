@@ -1,3 +1,33 @@
+/*
+ * @Author: NEFU AB-IN
+ * @Date: 2021-11-17 21:02:19
+ * @FilePath: \test\src\main\webapp\js\gif.js
+ * @LastEditTime: 2021-11-20 21:29:15
+ */
+
+
+/*
+对于不擅长写js的我，简直是灾难！
+以下包含偷学来的几种技术，用来做动画！
+    1. 滚动窗口
+        * Description: For smooth movement of pictures
+        * 核心技术：隐藏与显示图片
+        * 版本：
+            新增控制时间变换
+            新增按钮的使用变换
+    2. 新增section
+        * Description：Click the button of (more QRcode), there will be a new section
+            appear on the top!
+        * 核心技术：空间开辟
+        * 版本：
+    3. 滑动查看二级内容
+        * Description：Click the button of Aprev Anext on the top of the 
+            doctorBase and the officeBase, there will be a smooth movement of items
+        * 核心技术：算距离 + 修改对应ul的left
+        * 版本：
+            新增滑动效果
+            修改滑动后items出界的bug
+*/
 Kunyi.Index.DPosition = function (t, l, w) {
     $w = 300;
     $h = 165;
@@ -63,16 +93,20 @@ $(function () {
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 5);
             $w = 240 * 5;
-            $plus = 30;
+            $plus = 60;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 4);
             $w = (240 + 6) * 4;
-            $plus = 17;
+            $plus = 47;
         } else {
             $Size = Math.ceil($LiSize / 6);
             $w = (240 + 12) * 6;
-            $plus = 30;
+            $plus = 60;
         }
+        /*
+        这里的plus与下面的专业的是不同的，调试了好久，因为除数不同了，导致plus的不同，bug已修复
+        by AB-IN 2021/11/20
+         */
         if ($Index >= 0) {
             $obj.data("num", $Index);
             $obj.stop().animate({
@@ -97,15 +131,15 @@ $(function () {
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 5);
             $w = 240 * 5;
-            $plus = 30;
+            $plus = 60;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 4);
             $w = (240 + 6) * 4;
-            $plus = 17;
+            $plus = 47;
         } else {
             $Size = Math.ceil($LiSize / 6);
             $w = (240 + 12) * 6;
-            $plus = 30;
+            $plus = 60;
         }
         if ($Index < $Size) {
             $obj.data("num", $Index);
@@ -323,7 +357,7 @@ $__W.resize(function () {
     }
     $(".doctorsBase .contents ul,.officesBase .contents ul").removeAttr("style").data("num", "0");
     $("#BannerSwitch").removeClass("hidden").data("type", 0);
-    $("#BannerSwitch span").text("隐藏");
+    $("#BannerSwitch span").text("hide");
     $(".bannerBase .tools").removeAttr("style");
 });
 $__W.load(function () {

@@ -1,10 +1,22 @@
-* {
-    padding-bottom: 0px;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-}
+/*
+ * @Author: NEFU AB-IN
+ * @Date: 2021-11-17 21:02:19
+ * @FilePath: \test\src\main\webapp\css\index2.css
+ * @LastEditTime: 2021-11-20 21:11:30
+ */
+
+
+/*
+发现写的css实在太多了，大部分都是统一的样式，但要设置多个
+所以就将其分类，从而分出了另一个分支
+
+内容目录
+1. 全部导航栏的基本参数基本参数
+    <1>.包括header等导航栏
+    <2>.包括a等属性
+2. media 响应式布局（包含的是footer，nav，header）
+
+*/
 
 article, aside, dialog, footer, header, section, footer, nav, figure, menu {
     display: block;

@@ -1,3 +1,9 @@
+/*
+ * @Author: NEFU AB-IN
+ * @Date: 2021-11-17 21:02:19
+ * @FilePath: \test\src\main\java\com\entity\User.java
+ * @LastEditTime: 2021-11-20 20:57:15
+ */
 package com.entity;
 
 import java.util.Date;
@@ -10,6 +16,7 @@ public class User {
 
     public User() {
     }
+
     public User(int id, String name, Date insertTime, Date updateTime) {
         this.id = id;
         this.name = name;

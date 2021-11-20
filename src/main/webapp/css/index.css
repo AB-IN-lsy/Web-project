@@ -1,3 +1,19 @@
+/*
+ * @Author: NEFU AB-IN
+ * @Date: 2021-11-17 21:02:19
+ * @FilePath: \test\src\main\webapp\css\index.css
+ * @LastEditTime: 2021-11-20 21:08:06
+ */
+
+/*
+    这里是总的jsp的margin部分，每个部分进行划分
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 #banner{
     margin-bottom: 20px;
 }

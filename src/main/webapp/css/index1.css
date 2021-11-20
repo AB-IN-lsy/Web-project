@@ -1,3 +1,23 @@
+/*
+ * @Author: NEFU AB-IN
+ * @Date: 2021-11-17 21:02:19
+ * @FilePath: \test\src\main\webapp\css\index1.css
+ * @LastEditTime: 2021-11-20 21:05:07
+ */
+
+/*
+大工程！
+内容目录（方便本人查找）
+1.不同模块的基本css
+    <1>.banner
+    <2>.三个section的base部分
+        a.newsbase
+        b.docterbase
+        c.officesbase
+        d.otherbase
+2. media 响应式布局
+3. 挂件的配置（addition part）目前还处于不太成熟状态，因不能滑动上去，比较生硬
+*/
 nav .Inav {
     width: 938px;
 }

@@ -1,4 +1,19 @@
-﻿(function (a) {
+﻿/*
+ * @Author: NEFU AB-IN
+ * @Date: 2021-11-17 21:02:19
+ * @FilePath: \test\src\main\webapp\js\index.js
+ * @LastEditTime: 2021-11-20 21:29:09
+ */
+
+/*
+通过创建kunyi对象来进行维护网页的js的初始化以及window的加载
+其中很大一部分是写糊了的，部分功能套的板子，部分功能未实现，部分功能未上线
+主要的功能部分介绍
+    * 对接gif.js中的QRcode的展示
+    * dom
+ */
+
+(function (a) {
     function d(b) {
         var c = b || window.event, d = [].slice.call(arguments, 1), e = 0, f = !0, g = 0, h = 0;
         return b = a.event.fix(c), b.type = "mousewheel", c.wheelDelta && (e = c.wheelDelta / 120), c.detail && (e = -c.detail / 3), h = e, c.axis !== undefined && c.axis === c.HORIZONTAL_AXIS && (h = 0, g = -1 * e), c.wheelDeltaY !== undefined && (h = c.wheelDeltaY / 120), c.wheelDeltaX !== undefined && (g = -1 * c.wheelDeltaX / 120), d.unshift(b, e, g, h), (a.event.dispatch || a.event.handle).apply(this, d)
