@@ -8,36 +8,62 @@ package com.entity;
 
 import java.util.Date;
 
+/**
+ * @Author: NEFU AB-IN
+ * @Time : 2021/11/21 15:40
+ * @Project : test
+ */
 public class User {
-    private int id;
-    private String name;
+    private int uId;
+    private String uAccount;
+    private String uPasswd;
+    private int uRole;
     private Date insertTime;
     private Date updateTime;
 
-    public User() {
-    }
-
-    public User(int id, String name, Date insertTime, Date updateTime) {
-        this.id = id;
-        this.name = name;
+    public User(int uId, String uAccount, String uPasswd, int uRole, Date insertTime, Date updateTime) {
+        this.uId = uId;
+        this.uAccount = uAccount;
+        this.uPasswd = uPasswd;
+        this.uRole = uRole;
         this.insertTime = insertTime;
         this.updateTime = updateTime;
     }
 
-    public int getId() {
-        return id;
+    public User() {
+
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getuId() {
+        return uId;
     }
 
-    public String getName() {
-        return name;
+    public void setuId(int uId) {
+        this.uId = uId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getuAccount() {
+        return uAccount;
+    }
+
+    public void setuAccount(String uAccount) {
+        this.uAccount = uAccount;
+    }
+
+    public String getuPasswd() {
+        return uPasswd;
+    }
+
+    public void setuPasswd(String uPasswd) {
+        this.uPasswd = uPasswd;
+    }
+
+    public int getuRole() {
+        return uRole;
+    }
+
+    public void setuRole(int uRole) {
+        this.uRole = uRole;
     }
 
     public Date getInsertTime() {
