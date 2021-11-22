@@ -79,7 +79,7 @@
 
 # License
 
-Web-project is issued under GPLv3.   license.[License](http://kodcloud.com/tools/licenses/license.txt)  
+Web-project is issued under GPLv3.   license.[License](https://github.com/AB-IN-lsy/Web-project/blob/master/LICENSE)
 
 # 版权声明
 
