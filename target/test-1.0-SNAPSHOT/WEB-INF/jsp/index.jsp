@@ -59,17 +59,17 @@ Bug List:
     <div id="banner">
         <%@include file="/WEB-INF/jsp/banner.jsp" %>
     </div>
-    <div id="section2">
-        <%@include file="/WEB-INF/jsp/section2.jsp" %>
+    <div id="news">
+        <%@include file="/WEB-INF/jsp/news.jsp" %>
     </div>
     <div id="teacher">
         <%@include file="/WEB-INF/jsp/teacher.jsp" %>
     </div>
-    <div id="section1">
-        <%@include file="/WEB-INF/jsp/section1.jsp" %>
+    <div id="major">
+        <%@include file="/WEB-INF/jsp/major.jsp" %>
     </div>
-    <div id="section">
-        <%@include file="/WEB-INF/jsp/section.jsp" %>
+    <div id="lab">
+        <%@include file="/WEB-INF/jsp/lab.jsp" %>
     </div>
     <div id="QR">
         <%@include file="/WEB-INF/jsp/QR.jsp" %>

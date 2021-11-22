@@ -1,13 +1,14 @@
 <!--
- * @Author: NEFU AB-IN
- * @Date: 2021-11-17 20:23:29
- * @FilePath: \test\src\main\webapp\WEB-INF\jsp\teacher.jsp
- * @LastEditTime: 2021-11-20 21:39:11
+* @Author: NEFU AB-IN
+* @Date: 2021-11-17 20:23:29
+* @FilePath: \test\src\main\webapp\WEB-INF\jsp\teacher.jsp
+* @LastEditTime: 2021-11-20 21:39:11
 -->
 
 <!--
-    此部分是teacher section，即用于展示教师的风采
-    版本：目前还未加入数据库的更新
+此部分是teacher section，即用于展示教师的风采
+版本：目前还未加入数据库的更新
+    已加入数据库的更新
 -->
 
 <%@ page pageEncoding="UTF-8" %>
@@ -36,69 +37,16 @@
     </div>
     <div class="contents">
         <ul data-num="0">
-            <li><a class="img" href="#" target="_blank" title="姓名"><img alt="姓名" height="162" src="resources/images/ztj.png"
+            <c:forEach items="${teachers}" var="t" varStatus="i">
+            <li><a class="img" href="#" target="_blank" title="姓名"><img alt="姓名" height="162"
+                                                                        src="resources/images/${t.tPic}"
                                                                         title="姓名" width="120"/></a>
-                <a class="name" href="#" target="_blank" title="姓名">章天骄</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士</a>
+                <a class="name" href="#" target="_blank" title="姓名">${t.tName}</a>
+                <a class="office" href="#" target="_blank" title="">${t.tUniversity}</a>
+                <a class="post" href="#" target="_blank" title="姓名">${t.tTitle}</a>
                 <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
                 <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title="姓名"><img alt="姓名" height="162" src="resources/images/sc.jpg"
-                                                                        title="姓名" width="120"/></a>
-                <a class="name" href="#" target="_blank" title="姓名">史册</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学</a>
-                <a class="post" href="#" target="_blank" title="">博士</a>
-                <a class="btn more" href="#" target="_blank" title="">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=姓名"><img alt="姓名" height="162" src="resources/images/gf.jpg"
-                                                                       title="姓名" width="120"/></a>
-                <a class="name" href="#" target="_blank" title="姓名">关菲</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=""><img alt="姓名" height="162" src="resources/images/zxd.png"
-                                                                      title="姓名" width="120"/></a>
-                <a class="name" href=#" target="_blank" title="">赵旭东</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士后</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=""><img alt="姓名" height="162" src="resources/images/zxd.png"
-                                                                      title="姓名" width="120"/></a>
-                <a class="name" href=#" target="_blank" title="">赵旭东</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士后</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=""><img alt="姓名" height="162" src="resources/images/zxd.png"
-                                                                      title="姓名" width="120"/></a>
-                <a class="name" href=#" target="_blank" title="">赵旭东</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士后</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=""><img alt="姓名" height="162" src="resources/images/zxd.png"
-                                                                      title="姓名" width="120"/></a>
-                <a class="name" href=#" target="_blank" title="">赵旭东</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士后</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=""><img alt="姓名" height="162" src="resources/images/zxd.png"
-                                                                      title="姓名" width="120"/></a>
-                <a class="name" href=#" target="_blank" title="">赵旭东</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士后</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
-            <li><a class="img" href="#" target="_blank" title=""><img alt="姓名" height="162" src="resources/images/zxd.png"
-                                                                      title="姓名" width="120"/></a>
-                <a class="name" href=#" target="_blank" title="">赵旭东</a>
-                <a class="office" href="#" target="_blank" title="">哈尔滨工业大学大学</a>
-                <a class="post" href="#" target="_blank" title="姓名">博士后</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
+            </c:forEach>
             <div class="hackR"></div>
             <div class="hackL"></div>
     </div>

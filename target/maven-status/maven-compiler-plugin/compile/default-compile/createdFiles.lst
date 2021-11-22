@@ -1,4 +1,8 @@
-com\filter\EncodingFilter.class
+com\entity\Laboratory.class
+com\entity\Major.class
+com\entity\Teacher.class
 com\util\DataSourceUtils.class
+com\entity\ArticleLaboratory.class
+com\filter\EncodingFilter.class
 com\entity\User.class
 com\controller\IndexServlet.class

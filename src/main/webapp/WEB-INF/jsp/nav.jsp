@@ -124,9 +124,11 @@
                                 <div class="navSub3 nav_Route">
                                     <dl>
                                         <dt>乘车路线</dt>
-                                        <dd><em>东南口公交路线</em>
-                                            <p>307路、331路、375路、429路、508路、549路、562路、630路、86路、运通126路 （ 五道口站）
-                                                　　　333路、355路、438路、466路、594路、913路、运通110路（清华东路西口站）</p>
+                                        <dd><em>公交路线</em>
+                                            <p>哈尔滨站：在哈尔滨站出站口右侧沪士大厦后身乘338路公交车到东北林业大学站下车，往回走100米，到达学校正门。
+                                                哈尔滨西站：在哈西客站东广场乘120路公交车到科大小区站下车，前行100米，到达学校文昌门。
+                                                哈尔滨东站：在哈尔滨东站乘30路公交车到乐松广场站下车，往回走400米，到达学校正门。
+                                                哈尔滨太平国际机场：乘机场巴士2号线到乐松广场站下车，往回走300米，到达学校正门。</p>
                                         </dd>
                                         <dd><em>地铁路线</em>
                                             <p>1, 2号线</p></dd>
@@ -138,8 +140,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="学校简介.html" id="Nav_AMenu1" title="概况">学校概况</a>
+                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="#" id="Nav_AMenu1" title="概况">学校概况</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -153,30 +155,18 @@
                                         <li><a href="#" title="">统计资料<span>进入</span></a></li>
                                     </ul>
                                 </div>
-                                <div class="navSub6"><img height="92" src="images/12345.jpg" width="92"/>
+                                <div class="navSub6"><img height="92" src="resources/images/aulin.png" width="92"/>
                                     <ul>
-                                        <li><span>1909年</span><em>游美肄业馆</em></li>
-                                        <li><span>1911年</span><em>改名清华学堂</em></li>
-                                        <li><span>1911年</span><em>在清华园开学</em></li>
-                                        <li><span>1912年</span><em>更名为清华学校（Tsinghua college）</em></li>
-                                        <li><span>1916年</span><em>清华学校正式提出改办完全大学</em></li>
+                                        <li><span>2019年</span><em>正式成立</em></li>
                                     </ul>
                                     <a class="Amore" href="#">了解详情</a>
                                 </div>
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
-                                        <dt>习近平致信祝贺清华大学建校105周年</dt>
-                                        <dd>习近平在贺信中指出，清华大学是我国高等教育的一面旗帜。105年来，清华大学秉承自强不息、
-                                            厚德载物的校训，开创了中西融汇、古今贯通、文理渗透的办学风格，形成了爱国奉献、
-                                            追求卓越的精神和又红又专、全面发展的培养特色，培养了大批学术大师、兴业英才、
-                                            治国人才，为国家、为民族作出了重要贡献。
+                                        <dt>东北林业大学校长致辞</dt>
+                                        <dd>东北林业大学69载的孜孜奋进，留给东林人的是“学参天地，德合自然”的校训传统和以“团结拼搏、自我激励、发挥优势、争创一流”为核心的东林精神。自建校以来，学校已向国家输送各类毕业生17万余人，遍及华夏、绿满天涯，在经济社会发展和生态文明建设中发挥了重要作用。
                                         </dd>
-                                        <dd>习近平强调，办好高等教育，事关国家发展、事关民族未来。我国高等教育要紧紧围绕实现
-                                            “两个一百年”奋斗目标、实现中华民族伟大复兴的中国梦，源源不断培养大批德才兼备的
-                                            优秀人才。站在新的起点上，清华大学要坚持正确方向、坚持立德树人、坚持服务国家、坚持
-                                            改革创新，面向世界、勇于进取，树立自信、保持特色，广育祖国和人民需要的各类人才，深度
-                                            参与创新驱动发展战略实施，努力在创建世界一流大学方面走在前列，为国家发展、人民幸福、
-                                            人类文明进步作出新的更大的贡献。
+                                        <dd>奥林学院是东林与奥大创新合作的结晶，同学们在奥林学院能够体验中外不同文化，拓展国际视野，感受先进育人理念和培养创新合作能力。追梦东林，逐梦奥林，奥林学院将成为你迈向成功的新起点！
                                         </dd>
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -187,8 +177,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="科学研究.html" id="Nav_AMenu2" title="科学研究">科学研究</a>
+                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="#" id="Nav_AMenu2" title="科学研究">科学研究</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -204,7 +194,7 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>清华论坛</dt>
-                                        <dd class="pic"><img alt="" height="48" src="images/ico_049.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg" width="48"/>
                                         </dd>
                                         <dd><em>2017年3月9日</em><a href="#">理查德•霍顿（Richard
                                             Horton）《柳叶刀》杂志总编辑：人类的未来：理智的乐观或是悲观的期待？</a></dd>
@@ -219,7 +209,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>学术期刊</dt>
-                                        <dd class="pic"><img alt="" height="48" src="images/ico_048.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg" width="48"/>
                                         </dd>
                                         <dd><h3>《清华大学学报》</h3>
                                             <p><a href="#" title="">清华大学学报包括三种期刊：《清华大学学报（自然科学版）》、
@@ -240,7 +230,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="#" id="Nav_AMenu3">教育教学</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -258,7 +248,7 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>教育动态</dt>
-                                        <dd class="pic"><img alt="教育动态" height="48" src="images/ico_046.jpg"
+                                        <dd class="pic"><img alt="教育动态" height="48" src="resources/images/ico_046.jpg"
                                                              width="48"/></dd>
                                         <dd><em>2016年</em><a href="#" title="">截至2016年，清华大学累计招收培养外国留学生3万余人。</a></dd>
                                         <dd><em>2017-2018年</em><a href="#" title="">2017-2018学年度，清华大学将有39个本科专业、
@@ -273,7 +263,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>教育扶贫</dt>
-                                        <dd class="pic"><img alt="本科生教育" height="48" src="images/ico_048.jpg"
+                                        <dd class="pic"><img alt="本科生教育" height="48" src="resources/images/ico_048.jpg"
                                                              width="48"/></dd>
                                         <dd><em>2003年9月12日</em><a href="#" title="”">清华大学教育扶贫远程教学站开通仪式暨教育扶贫工作座谈会在清华大学隆重举行。</a>
                                         </dd>
@@ -290,7 +280,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="#" id="Nav_AMenu4">学校团队</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -304,7 +294,7 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>专家讲座</dt>
-                                        <dd class="pic"><img alt="" height="48" src="images/ico_049.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg" width="48"/>
                                         </dd>
                                         <dd><em>2017年3月9日</em><a href="#">理查德•霍顿（Richard
                                             Horton）《柳叶刀》杂志总编辑：人类的未来：理智的乐观或是悲观的期待？</a></dd>
@@ -319,7 +309,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>杰出人才</dt>
-                                        <dd class="pic"><img alt="" height="48" src="images/ico_050.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_050.jpg" width="48"/>
                                         </dd>
                                         <dd><em>两院院士</em><a href="#" title="”">院士是学术界给予科学家的最高荣誉称号，我校目前拥有中国科学院院士45名、
                                             中国工程院院士33名，其中包括1名双院院士。</a></dd>
@@ -337,8 +327,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="新闻动态.html" id="Nav_AMenu5" title="新闻动态">新闻动态</a>
+                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="#" id="Nav_AMenu5" title="新闻动态">新闻动态</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -354,7 +344,7 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>最新动态</dt>
-                                        <dd class="pic"><img alt="" height="48" src="images/ico_046.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_046.jpg" width="48"/>
                                         </dd>
                                         <dd><em>2018年1月10日</em><a href="#">1月10日下午，国务院副总理刘延东来到清华大学，亲切会见清华师生代表，
                                             并考察调研航空发动机研究院和苏世民书院。教育部部长陈宝生，国务院副秘书长江小涓，北京市委常委、教育工委书
@@ -368,7 +358,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>媒体清华</dt>
-                                        <dd class="pic"><img alt="" height="48" src="images/ico_048.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg" width="48"/>
                                         </dd>
                                         <dd><em>独上高楼，望尽天涯路</em><a href="#" title="”">独上高楼，望尽天涯路
                                             ——纪念王国维诞辰140周年</a></dd>
@@ -390,8 +380,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><a class="PAMenu" href="校园生活.html" id="Nav_AMenu7" title="">校园生活</a></li>
-                <li class="PMenu"><a class="PAMenu" href="图书馆.html" id="Nav_AMenu8" title="">清华图书馆</a></li>
+                <li class="PMenu"><a class="PAMenu" href="#" id="Nav_AMenu7" title="">校园生活</a></li>
+                <li class="PMenu"><a class="PAMenu" href="#" id="Nav_AMenu8" title="">图书馆</a></li>
             </ul>
         </div>
     </div>

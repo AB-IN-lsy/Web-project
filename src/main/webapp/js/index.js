@@ -706,15 +706,15 @@ $(function () {
             Kunyi.InitFun();
         }
     }, 2888);
-    Kunyi.QuickMenuBase.hover(function () {
-        if (Kunyi.QuickMenuBase.data("type") == 0) {
-            $("nav .quickMenus").stop(false, true).fadeIn(588, "easeOutQuint");
-        }
-    }, function () {
-        if (Kunyi.QuickMenuBase.data("type") == 0) {
-            $("nav .quickMenus").hide();
-        }
-    });
+    // Kunyi.QuickMenuBase.hover(function () {
+    //     if (Kunyi.QuickMenuBase.data("type") == 0) {
+    //         $("nav .quickMenus").stop(false, true).fadeIn(588, "easeOutQuint");
+    //     }
+    // }, function () {
+    //     if (Kunyi.QuickMenuBase.data("type") == 0) {
+    //         $("nav .quickMenus").hide();
+    //     }
+    // });
     $("#BtnQRMore").click(function () {
         $base = $("#QRBase");
         $obj = $base.find(".QRBase");

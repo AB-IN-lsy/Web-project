@@ -8,11 +8,6 @@ package com.entity;
 
 import java.util.Date;
 
-/**
- * @Author: NEFU AB-IN
- * @Time : 2021/11/21 15:40
- * @Project : test
- */
 public class User {
     private int uId;
     private String uAccount;

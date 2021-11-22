@@ -12,11 +12,13 @@ public class Major {
     private String mLabel;
     private String mContent;
     private String mName;
+    private String mPic;
     private Date insertTime;
     private Date updateTime;
 
-    public Major(int mId, String mLabel, String mContent, String mName, Date insertTime, Date updateTime) {
+    public Major(int mId, String mName, String mLabel, String mPic, String mContent, Date insertTime, Date updateTime) {
         this.mId = mId;
+        this.mPic = mPic;
         this.mLabel = mLabel;
         this.mContent = mContent;
         this.mName = mName;
@@ -25,6 +27,14 @@ public class Major {
     }
 
     public Major() {
+    }
+
+    public String getmPic() {
+        return mPic;
+    }
+
+    public void setmPic(String mPic) {
+        this.mPic = mPic;
     }
 
     public int getmId() {

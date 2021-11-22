@@ -348,13 +348,14 @@ $(function () {
     }, 1288);
 });
 $__W.resize(function () {
-    if (Kunyi.BaseMark.width() >= 1200) {
-        Kunyi.QuickMenuBase.data("type", 1);
-        $("nav .quickMenus").show();
-    } else {
-        Kunyi.QuickMenuBase.data("type", 0);
-        $("nav .quickMenus").hide();
-    }
+    // 解决了按F12时quickmenu
+    // if (Kunyi.BaseMark.width() >= 1200) {
+    //     Kunyi.QuickMenuBase.data("type", 1);
+    //     $("nav .quickMenus").show();
+    // } else {
+    //     Kunyi.QuickMenuBase.data("type", 0);
+    //     $("nav .quickMenus").hide();
+    // }
     $(".doctorsBase .contents ul,.officesBase .contents ul").removeAttr("style").data("num", "0");
     $("#BannerSwitch").removeClass("hidden").data("type", 0);
     $("#BannerSwitch span").text("hide");

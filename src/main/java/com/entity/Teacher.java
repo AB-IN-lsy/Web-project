@@ -10,14 +10,18 @@ import java.util.Date;
 public class Teacher {
     private int tId;
     private String tName;
+    private String tUniversity;
     private String tTitle;
     private String tPic;
     private Date insertTime;
     private Date updateTime;
 
-    public Teacher(int tId, String tName, String tTitle, String tPic, Date insertTime, Date updateTime) {
+
+
+    public Teacher(int tId, String tName, String tUniversity, String tTitle, String tPic, Date insertTime, Date updateTime) {
         this.tId = tId;
         this.tName = tName;
+        this.tUniversity = tUniversity;
         this.tTitle = tTitle;
         this.tPic = tPic;
         this.insertTime = insertTime;
@@ -27,7 +31,13 @@ public class Teacher {
     {
 
     }
+    public String gettUniversity() {
+        return tUniversity;
+    }
 
+    public void settUniversity(String tUniversity) {
+        this.tUniversity = tUniversity;
+    }
     public int gettId() {
         return tId;
     }

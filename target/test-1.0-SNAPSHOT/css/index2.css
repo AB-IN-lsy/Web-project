@@ -587,8 +587,7 @@ nav .quickMenu01 {
 }
 
 nav .quickMenu02 {
-    background: url(../resources/images/ico_013.png) 15px center no-repeat;
-    background-color: #6bcbca;
+    background: #6bcbca url(../resources/images/ico_013.png) no-repeat 15px center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -937,7 +936,6 @@ nav .nav {
     position: absolute;
     top: 0px;
     right: 0px;
-    background: url(../resources/images/Yellowline.jpg) repeat-x;
     padding-left: 5px;
 }
 
@@ -1126,7 +1124,6 @@ nav .nav .PMenu:hover img.animated, nav .nav .PMenu.current img.animated {
 }
 
 .navSub7 ul li {
-    background: url(../resources/images/ico_038.jpg) left center no-repeat;
     padding-left: 18px;
     height: 24px;
     overflow: hidden;
@@ -1577,7 +1574,6 @@ footer .menusBase dd a {
     font-size: 14px;
     text-indent: 46px;
     display: block;
-    background: url(../resources/images/ico_007.jpg) 26px center no-repeat;
 }
 
 footer .menusBase dd a:hover {
@@ -1806,7 +1802,6 @@ div#anpNews .None {
 
 div#anpNews A {
     border: 1px #d3d3d4 solid;
-    background: url(../resources/images/page_bg.jpg) center center no-repeat;
     padding: 8px 10px;
 }
 
