@@ -6,3 +6,4 @@ com\entity\ArticleLaboratory.class
 com\filter\EncodingFilter.class
 com\entity\User.class
 com\controller\IndexServlet.class
+com\entity\News.class

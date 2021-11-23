@@ -6,10 +6,7 @@
  */
 package com.controller;
 
-import com.entity.ArticleLaboratory;
-import com.entity.Laboratory;
-import com.entity.Major;
-import com.entity.Teacher;
+import com.entity.*;
 import com.util.DataSourceUtils;
 
 import javax.servlet.ServletException;
@@ -22,11 +19,32 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/index")
 public class IndexServlet extends HttpServlet {
+    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd");
+    protected List<News> getNews() {
+        List<News> news = new ArrayList<>();
+        try (Connection conn = DataSourceUtils.getConnection();
+             PreparedStatement st = conn.prepareStatement("select * from news");
+             ResultSet rs = st.executeQuery()) {
+            while (rs.next()) {
+                News news1 = new News(rs.getInt("n_id"),
+                        rs.getString("n_label"),
+                        rs.getString("n_content"),
+                        rs.getTimestamp("create_time"),
+                        rs.getTimestamp("update_time"),
+                        ft.format(rs.getTimestamp("create_time")));
+                news.add(news1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return news;
+    }
     protected List<ArticleLaboratory> getArticleLaboratories() {
         List<ArticleLaboratory> articleLaboratories = new ArrayList<>();
         try (Connection conn = DataSourceUtils.getConnection();
@@ -113,6 +131,8 @@ public class IndexServlet extends HttpServlet {
         req.setAttribute("laboratories", getLaboratories());
         req.setAttribute("majors", getMajors());
         req.setAttribute("teachers", getTeachers());
+        req.setAttribute("news", getNews());
+
         req.getRequestDispatcher("WEB-INF/jsp/index.jsp").forward(req, resp);
     }
 }

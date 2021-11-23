@@ -886,7 +886,7 @@ nav .quickMenus .firstA i.style01 {
 }
 
 nav .quickMenus .firstA i.style02 {
-    background: url(../resources/images/logo1.png) center center no-repeat;
+    background: url(../resources/images/ico_056.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style03 {
@@ -906,7 +906,16 @@ nav .quickMenus .firstA i.style06 {
 }
 
 nav .quickMenus .firstA i.style07 {
-    background: url(../resources/images/logo1.png) center center no-repeat;
+    background: url(../resources/images/ico_60.png) center center no-repeat;
+}
+nav .quickMenus .firstA i.style08 {
+    background: url(../resources/images/ico_057.png) center center no-repeat;
+}
+nav .quickMenus .firstA i.style09 {
+    background: url(../resources/images/ico_059.png) center center no-repeat;
+}
+nav .quickMenus .firstA i.style10 {
+    background: url(../resources/images/ico_60.png) center center no-repeat;
 }
 
 nav .quickMenus .first.last em {

@@ -2,13 +2,15 @@
 * @Author: NEFU AB-IN
 * @Date: 2021-11-17 20:23:29
 * @FilePath: \test\src\main\webapp\WEB-INF\jsp\news.jsp
-* @LastEditTime: 2021-11-20 21:40:08
+* @LastEditTime: 2021-11-23 21:27:18
 -->
 
 <!--
 此部分是news，即图片下面的新闻公告
-ps：由于我是从下往上写的，所以命名它最小。。。
-版本：目前还未加入数据库的更新
+版本：目前还未加入数据库的更新 2021-11-19
+    加入右栏数据库更新 2021-11-20
+    加入左栏数据库更新 2021-11-23
+    加入左栏数据库更新时间，学会用dateformat进行转换 2021-11-23
 -->
 
 <%@ page pageEncoding="UTF-8" %>
@@ -71,30 +73,31 @@ ps：由于我是从下往上写的，所以命名它最小。。。
                 ><img
                         class="load"
                         height="76"
-                        src="resources/images/pic4.png"
+                        src="resources/images/pic1.jpg"
                         width="126"
                 /></a>
-                <div>
-                        <span>2021-11-19</span
-                        ><a href="#"
-                >转发科研院“关于开展学习贯彻党的十九届六中全会精神主题征文的通知”</a
-                >
-                </div>
+                <c:forEach items="${news}" var="n" varStatus="i">
+                    <c:if test="${i.count == 1}">
+                        <div>
+                            <span>${n.currentDate}</span><a href="#"
+                        >${n.nLabel}</a
+                        >
+                        </div>
+                    </c:if>
+                </c:forEach>
                 <div class="clear"></div>
             </div>
             <ul>
-                <li>
-                    <span>2021-11-19</span>
-                    <a href="#" target="_blank"
-                    >转发科研院“关于组织申报2022年黑龙江省地方标准制修订项目的通知”</a
-                    >
-                </li>
-                <li>
-                    <span>2021-11-19</span>
-                    <a href="#" target="_blank"
-                    >转发研究生院“关于进一步加强实践教学安全管理工作的通知</a
-                    >
-                </li>
+                <c:forEach items="${news}" var="n" varStatus="i">
+                    <c:if test="${i.count > 1}">
+                        <li>
+                            <span>${n.currentDate}</span>
+                            <a href="#" target="_blank"
+                            >${n.nLabel}</a
+                            >
+                        </li>
+                    </c:if>
+                </c:forEach>
             </ul>
         </div>
         <div class="notice notice02">
@@ -115,11 +118,9 @@ ps：由于我是从下往上写的，所以命名它最小。。。
                 <div class="clear"></div>
             </div>
             <ul>
-                <li>
-                    <a href="#">奥林学子在团体程序设计天梯赛中获佳绩</a>
-                </li>
-                <li><a href="#">新冠肺炎自动标注系统被推广应用</a></li>
-                <li><a href="#">修订项目的通知</a></li>
+                <c:forEach items="${article_laboratory}" var="al" varStatus="i">
+                    <li><a href="#">${al.alLabel}</a></li>
+                </c:forEach>
             </ul>
         </div>
     </div>

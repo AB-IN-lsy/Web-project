@@ -1,9 +1,8 @@
-
 <!--
 * @Author: NEFU AB-IN
 * @Date: 2021-11-17 20:23:29
 * @FilePath: \test\src\main\webapp\WEB-INF\jsp\nav.jsp
-* @LastEditTime: 2021-11-20 21:32:02
+* @LastEditTime: 2021-11-23 22:12:56
 -->
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -13,7 +12,13 @@
     <meta charset="UTF-8">
     <title>nav</title>
 </head>
-
+<!--
+此部分是nav，即banner左边的导航栏
+版本：制作了多个小图标 2021/11/23
+    css样式圆圈拓展 2021/11/23
+    quick menu的sub menu写好 2021/11/23
+    写好了每个section的JavaScript: scroll() ps:因为偷懒所以没写第二界面 2021/11/23
+-->
 <nav>
     <div class="navBase">
         <div class="quickMenuBase" data-type="1">
@@ -22,8 +27,8 @@
             <div class="quickMenus">
                 <ul class="firstUl">
                     <li class="first">
-                        <a class="firstA" href="#">
-                            <em>专业咨询</em><i class="style01"></i></a>
+                        <a class="firstA" href="#" target="_self">
+                            <em>专业咨询</em><i class="style01"></i><span></span></a>
                         <div class="QMSub QMSubMenus">
                             <ul>
                                 <li><a href="#" title="">本科生教育</a></li>
@@ -35,7 +40,7 @@
                             <div class="clear"></div>
                         </div>
                     </li>
-                    <li class="first"><a class="firstA" href="#"><em>计科伟人</em><i class="style04"></i><span></span></a>
+                    <li class="first"><a class="firstA" href="#"><em>杰出校友</em><i class="style04"></i><span></span></a>
                         <div class="QMSub QMSubList">
                             <div class="IndexWords">
                                 <h5>按姓名首字母查找</h5>
@@ -84,20 +89,20 @@
                         </div>
                     </li>
                     <li class="first last">
-                        <a class="firstA" href="#" target="_self">
-                            <em>专业设置</em><i class="style07"></i><span></span></a>
+                        <a class="firstA" href="javascript:scroll(0,800)" target="_self">
+                            <em>教师团队</em><i class=" style08"></i><span></span></a>
                     </li>
                     <li class="first last">
-                        <a class="firstA" href="#">
-                            <em>专业介绍</em><i class="style07"></i><span></span></a>
+                        <a class="firstA" href="javascript:scroll(0,1250)">
+                            <em>计科专业</em><i class="style09"></i><span></span></a>
                     </li>
                     <li class="first last">
-                        <a class="firstA" href="#">
-                            <em>专业简介</em><i class="style07"></i><span></span></a>
+                        <a class="firstA" href="javascript:scroll(0,1645)">
+                            <em>实验新闻</em><i class="style10"></i><span></span></a>
                     </li>
                     <li class="first last">
-                        <a class="firstA" href="#">
-                            <em>杰出人才</em><i class="style07"></i><span></span></a>
+                        <a class="firstA" href="javascript:scroll(0,2000)">
+                            <em>联系我们</em><i class="style07"></i><span></span></a>
                     </li>
                 </ul>
             </div>
