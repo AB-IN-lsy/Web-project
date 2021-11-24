@@ -106,6 +106,15 @@
                             />
                         </div>
                     </li>
+                    <li>
+                        <div>
+                            <img
+                                    height="75"
+                                    src="resources/images/QRcode.jpg"
+                                    width="75"
+                            />
+                        </div>
+                    </li>
                 </ul>
                 <div class="clear"></div>
             </div>

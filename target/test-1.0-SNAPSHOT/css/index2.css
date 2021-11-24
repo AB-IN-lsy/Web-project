@@ -288,7 +288,7 @@ div#Footer_CodeDiv {
     background-image: -webkit-linear-gradient(top, #43ab00, #388e00);
     background-image: -o-linear-gradient(top, #43ab00, #388e00);
     background-image: linear-gradient(top, #43ab00, #388e00);
-    border: 1px solid #338100;
+    border: 1px solid #00785a;
 }
 
 .mtip.warning {
@@ -333,7 +333,7 @@ header .toolBase {
     position: absolute;
     top: -46px;
     left: 0px;
-    background: #5C307D;
+    background: #00785a;
     color: white;
 }
 
@@ -371,12 +371,21 @@ header .BaseMark ul li.first {
     padding-left: 0px;
 }
 
-header .language {
+header .loginIn {
     width: 57px;
     height: 40px;
     line-height: 40px;
     position: absolute;
     right: 92px;
+    top: 0px;
+    background: url(../resources/images/ico_vline.jpg) right center no-repeat;
+}
+header .loginUp {
+    width: 57px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 142px;
     top: 0px;
     background: url(../resources/images/ico_vline.jpg) right center no-repeat;
 }
@@ -413,7 +422,7 @@ header .langBtn .downBtn {
 }
 
 header .langBtn:hover {
-    background: #5C307D;
+    background: #00785a;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -470,9 +479,9 @@ header .logoBase {
 }
 
 header .logoBase .load {
-    top: 46px;
+    top: 15px;
     position: absolute;
-    left: 0px;
+    left: 46px;
 }
 
 header .searchBase {
@@ -541,7 +550,7 @@ header .searchBase .boxsub {
     position: absolute;
     top: -2px;
     right: -2px;
-    background: #5C307D;
+    background: #00785a;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -576,7 +585,7 @@ nav .quickMenuBase {
 }
 
 nav .quickMenu01 {
-    background: #BDA179;
+    background: #00785a;
     width: 100%;
     text-indent: 80px;
     color: #FFF;
@@ -923,14 +932,14 @@ nav .quickMenus .first.last em {
 }
 
 nav .quickMenus li.first:hover .firstA {
-    background: #5C307D url(../resources/images/ico_016b.png) right center no-repeat;
+    background: #00785a url(../resources/images/ico_016b.png) right center no-repeat;
     text-indent: 68px;
     color: #FFF;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 nav .quickMenus li.first:hover .firstA em {
-    border-bottom: 1px solid #5C307D;
+    border-bottom: 1px solid #00785a;
 }
 
 nav .quickMenus li.first:hover .firstA span {
@@ -946,6 +955,7 @@ nav .nav {
     top: 0px;
     right: 0px;
     padding-left: 5px;
+    background: #00785a;
 }
 
 nav .nav .PMenu {
@@ -981,7 +991,7 @@ nav .nav .PAMenu {
 }
 
 nav .nav .PMenu:hover, nav .nav .PMenu.current {
-    background: #a48d6b;
+    background: #29596f;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
