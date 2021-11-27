@@ -14,7 +14,7 @@
 
 * ### <font color=#000000 size=4 face=粗体>项目时长</font>
 
-  ![image-20211127184940523](https://github.com/AB-IN-lsy/Web-project/asserts/img1.png)
+  ![image-20211127184940523](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img1.png)
 
 * ### <font color=#000000 size=4 face=粗体>项目要求</font>
 
