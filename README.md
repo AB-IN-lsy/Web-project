@@ -10,6 +10,12 @@
 
 [![Blog page](https://img.shields.io/badge/Blog-page-red.svg?style=flat)](https://www.ab-in.cn) [![GPLV3 License](https://img.shields.io/badge/Licence-GPLV3-green.svg?style=flat)](https://github.com/AB-IN-lsy/web-project/blob/master/LICENSE) [![Home page](https://img.shields.io/badge/home-page-yellow.svg?style=flat)](https://web.ab-in.cn/test/index) <a href="https://github.com/AB-IN-lsy/web-project/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AB-IN-lsy/web-project"></a>
 
+
+
+* ### <font color=#000000 size=4 face=粗体>项目时长</font>
+
+  ![image-20211127184940523](C:\Users\liusy\AppData\Roaming\Typora\typora-user-images\image-20211127184940523.png)
+
 * ### <font color=#000000 size=4 face=粗体>项目要求</font>
 
   基于 HTML/CSS/JS/Servlet/JDBC 等技术完成以下设计内容 

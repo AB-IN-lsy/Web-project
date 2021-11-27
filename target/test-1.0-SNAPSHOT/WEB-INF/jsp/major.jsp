@@ -8,7 +8,7 @@
 <!--
 此部分是major，即用于展示专业的必修课
 版本：目前还未加入数据库的更新 2021-11-19
-    加入了数据库更新 2021-11-21
+加入了数据库更新 2021-11-21
 -->
 
 <%@ page pageEncoding="UTF-8" %>
@@ -30,7 +30,7 @@
             <a class="ASwitch" href="javascript:;" id="OSearchSwitch"
             >快速查找</a
             >
-            <a class="Amore" href="#">更多 ></a>
+            <a class="Amore" href="major" target="_blank">更多 ></a>
             <a class="Aprev" href="javascript:;"></a>
             <a class="Anext" href="javascript:;"></a>
         </div>
@@ -42,18 +42,18 @@
                 <li>
                     <i class="ico01"></i>
                     <div class="img animated">
-                        <img
+                        <a href="getmajor?mid=${m.mId}" target="_blank" title="${m.mName}"><img
                                 alt="${m.mName}"
                                 height="80"
                                 src="resources/images/${m.mPic}"
                                 width="80"
-                        />
+                        /></a>
                     </div>
-                    <a class="office" href="#" title="${m.mName}">${m.mName}</a>
+                    <a class="office" href="getmajor?mid=${m.mId}" title="${m.mName}" target="_blank">${m.mName}</a>
                     <p>${m.mLabel}
                     </p>
-                    <a class="btn more" href="#" title="${m.mName}">查看详细</a>
-                    <a class="btn doctor" href="#" title="${m.mName}讲师">知名导师</a>
+                    <a class="btn more" href="getmajor?mid=${m.mId}" title="${m.mName}" target="_blank">查看详细</a>
+                    <a class="btn doctor" href="teacher" title="${m.mName}讲师" target="_blank">知名导师</a>
                 </li>
             </c:forEach>
         </ul>

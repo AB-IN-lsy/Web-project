@@ -8,9 +8,9 @@
 <!--
 此部分是news，即图片下面的新闻公告
 版本：目前还未加入数据库的更新 2021-11-19
-    加入右栏数据库更新 2021-11-20
-    加入左栏数据库更新 2021-11-23
-    加入左栏数据库更新时间，学会用dateformat进行转换 2021-11-23
+加入右栏数据库更新 2021-11-20
+加入左栏数据库更新 2021-11-23
+加入左栏数据库更新时间，学会用dateformat进行转换 2021-11-23
 -->
 
 <%@ page pageEncoding="UTF-8" %>
@@ -64,24 +64,23 @@
     </div>
     <div class="noticeBase">
         <div class="notice notice01">
-            <a class="more" href="#">更多</a>
+            <a class="more" href="news" target="_blank">更多</a>
             <div class="title">
                 <em>最新动态</em><span>Latest Announcement</span>
             </div>
             <div class="first">
-                <a href="#" id="ANoticeFirst"
-                ><img
-                        class="load"
-                        height="76"
-                        src="resources/images/pic1.jpg"
-                        width="126"
-                /></a>
                 <c:forEach items="${news}" var="n" varStatus="i">
                     <c:if test="${i.count == 1}">
+                        <a href="getnews?nid=${n.nId }" id="ANoticeFirst"
+                        ><img
+                                class="load"
+                                height="76"
+                                src="resources/images/pic1.jpg"
+                                width="126"
+                        /></a>
                         <div>
-                            <span>${n.currentDate}</span><a href="#"
-                        >${n.nLabel}</a
-                        >
+                            <span>${n.currentDate}</span><a href="getnews?nid=${n.nId }" target="_blank"
+                        >${n.nLabel}</a>
                         </div>
                     </c:if>
                 </c:forEach>
@@ -92,34 +91,38 @@
                     <c:if test="${i.count > 1}">
                         <li>
                             <span>${n.currentDate}</span>
-                            <a href="#" target="_blank"
-                            >${n.nLabel}</a
-                            >
+                            <a href="getnews?nid=${n.nId }" target="_blank"
+                            >${n.nLabel}</a>
                         </li>
                     </c:if>
                 </c:forEach>
             </ul>
         </div>
         <div class="notice notice02">
-            <a class="more" href="#">更多</a>
+            <a class="more" href="labnews" target="_blank">更多</a>
             <div class="title">
-                <em>科研成果</em
-                ><span> achievements in scientific research</span>
+                <em>科研新闻</em><span> news in scientific research</span>
             </div>
             <div class="first">
-                <a href="#" id="ANewsFirst">
-                    <img
-                            class="load"
-                            height="76"
-                            src="resources/images/pic4.png"
-                            width="126"
-                    /></a>
-                <div><a href="#">发明一种新冠肺炎自动标注系统</a></div>
+                <c:forEach items="${article_laboratory}" var="al" varStatus="i">
+                    <c:if test="${i.count == 2}">
+                        <a href="getlabnews?alid=${al.alId }" id="ANewsFirst">
+                            <img
+                                    class="load"
+                                    height="76"
+                                    src="resources/images/pic4.png"
+                                    width="126"
+                            /></a>
+                        <div><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></div>
+                    </c:if>
+                </c:forEach>
                 <div class="clear"></div>
             </div>
             <ul>
                 <c:forEach items="${article_laboratory}" var="al" varStatus="i">
-                    <li><a href="#">${al.alLabel}</a></li>
+                    <c:if test="${i.count != 2}">
+                        <li><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></li>
+                    </c:if>
                 </c:forEach>
             </ul>
         </div>

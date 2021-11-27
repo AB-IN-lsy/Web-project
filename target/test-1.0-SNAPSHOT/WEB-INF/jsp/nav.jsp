@@ -19,6 +19,7 @@
     quick menu的sub menu写好 2021/11/23
     写好了每个section的JavaScript: scroll() ps:因为偷懒所以没写第二界面 2021/11/23
     加入了数据库的更新 2021/11/24
+    加入了从数据库中利用主码进行的查询，并打开详情页 2021/11/24
 -->
 <nav>
     <div class="navBase">
@@ -99,7 +100,7 @@
                     </li>
                     <li class="first last">
                         <a class="firstA" href="javascript:scroll(0,1845)">
-                            <em>实验新闻</em><i class="style10"></i><span></span></a>
+                            <em>科研新闻</em><i class="style10"></i><span></span></a>
                     </li>
                     <li class="first last">
                         <a class="firstA" href="javascript:scroll(0,2200)">
@@ -122,8 +123,10 @@
                                     <div class="BottomHidden"></div>
                                     <dl>
                                         <dt>奥林学院</dt>
-                                        <dd class="pic"><img height="77" src="resources/images/aulin.png" width="126"></dd>
-                                        <dd class="text"><p>东北林业大学奥林学院作为一个非独立法人的中外合作办学机构，于2019 年 4 月 15 日获教育部批准，同意设立。奥林学院隶属于东北林业大学（简称“东林”），是兼具有中外合作办学性质的一个教学、科研单位，办学地点设在东林校区。</p>
+                                        <dd class="pic"><img height="77" src="resources/images/aulin.png" width="126">
+                                        </dd>
+                                        <dd class="text"><p>东北林业大学奥林学院作为一个非独立法人的中外合作办学机构，于2019 年 4 月 15
+                                            日获教育部批准，同意设立。奥林学院隶属于东北林业大学（简称“东林”），是兼具有中外合作办学性质的一个教学、科研单位，办学地点设在东林校区。</p>
                                             <p> 地址： 东北林业大学 </p></dd>
                                     </dl>
                                 </div>
@@ -170,9 +173,11 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>东北林业大学校长致辞</dt>
-                                        <dd>东北林业大学69载的孜孜奋进，留给东林人的是“学参天地，德合自然”的校训传统和以“团结拼搏、自我激励、发挥优势、争创一流”为核心的东林精神。自建校以来，学校已向国家输送各类毕业生17万余人，遍及华夏、绿满天涯，在经济社会发展和生态文明建设中发挥了重要作用。
+                                        <dd>
+                                            东北林业大学69载的孜孜奋进，留给东林人的是“学参天地，德合自然”的校训传统和以“团结拼搏、自我激励、发挥优势、争创一流”为核心的东林精神。自建校以来，学校已向国家输送各类毕业生17万余人，遍及华夏、绿满天涯，在经济社会发展和生态文明建设中发挥了重要作用。
                                         </dd>
-                                        <dd>奥林学院是东林与奥大创新合作的结晶，同学们在奥林学院能够体验中外不同文化，拓展国际视野，感受先进育人理念和培养创新合作能力。追梦东林，逐梦奥林，奥林学院将成为你迈向成功的新起点！
+                                        <dd>
+                                            奥林学院是东林与奥大创新合作的结晶，同学们在奥林学院能够体验中外不同文化，拓展国际视野，感受先进育人理念和培养创新合作能力。追梦东林，逐梦奥林，奥林学院将成为你迈向成功的新起点！
                                         </dd>
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -200,7 +205,8 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>科学论坛</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg"
+                                                             width="48"/>
                                         </dd>
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -208,7 +214,8 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>学术期刊</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg"
+                                                             width="48"/>
 
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -258,7 +265,7 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu4" title="学校团队">学校团队</a>
+                    <a class="PAMenu" href="teacher" id="Nav_AMenu4" title="学校团队">学校团队</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -271,7 +278,8 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>专家讲座</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg"
+                                                             width="48"/>
 
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -279,7 +287,8 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>杰出校友</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_050.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_050.jpg"
+                                                             width="48"/>
                                         </dd>
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -295,14 +304,15 @@
                             <div class="navbox BaseMark">
                                 <div class="navMenus">
                                     <ul>
-                                        <li class="first"><a href="" title="">头条新闻<span>进入</span></a></li>
-                                        <li><a href="#" title="">实验新闻<span>进入</span></a></li>
+                                        <li class="first"><a href="news" title="">头条新闻<span>进入</span></a></li>
+                                        <li><a href="labnews" title="">科研新闻<span>进入</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>头条新闻</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_046.jpg" width="48"/>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_046.jpg"
+                                                             width="48"/>
                                         </dd>
                                         <c:forEach items="${news}" var="n" varStatus="i">
                                             <dd><em>${n.currentDate}</em><a href="#">${n.nLabel}</a></dd>
@@ -312,12 +322,13 @@
                                 </div>
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
-                                        <dt>实验新闻</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg" width="48"/>
+                                        <dt>科研新闻</dt>
+                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg"
+                                                             width="48"/>
                                         </dd>
                                         <c:forEach items="${article_laboratory}" var="al" varStatus="i">
                                             <c:if test="${i.count == 1}">
-                                            <dd><em>${al.alLabel}</em><a href="#">${al.alContent}</a></dd>
+                                                <dd><em>${al.alLabel}</em><a href="#">${al.alContent}</a></dd>
                                             </c:if>
                                         </c:forEach>
                                     </dl>
@@ -328,8 +339,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><a class="PAMenu" href="#" id="Nav_AMenu7" title="">校园生活</a></li>
-                <li class="PMenu"><a class="PAMenu" href="#" id="Nav_AMenu8" title="">图书馆</a></li>
+                <li class="PMenu"><a class="PAMenu" href="labnews" id="Nav_AMenu7" title="">科研新闻</a></li>
+                <li class="PMenu"><a class="PAMenu" href="lab" id="Nav_AMenu8" title="">实验室</a></li>
             </ul>
         </div>
     </div>

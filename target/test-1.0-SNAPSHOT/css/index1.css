@@ -2,7 +2,7 @@
  * @Author: NEFU AB-IN
  * @Date: 2021-11-17 21:02:19
  * @FilePath: \test\src\main\webapp\css\index1.css
- * @LastEditTime: 2021-11-20 21:05:07
+ * @LastEditTime: 2021-11-27 11:05:07
  */
 
 /*
@@ -1369,10 +1369,17 @@ nav .Inav {
 }
 
 @media all and (min-width: 1581px) and (max-width: 3840px) {
+    div .Banners{
+        width: 962px;
+    }
+    nav .Inav {
+        margin-left: -5px;
+        width: 1175px;
+        padding-left: 16px;
+    }
     nav .quickMenuBase {
         width: 310px;
     }
-
     nav .quickMenus {
         width: 310px;
     }
@@ -1380,12 +1387,6 @@ nav .Inav {
     nav .quickMenu02 {
         display: none;
     }
-
-    nav .Inav {
-        width: 1164px;
-        padding-left: 16px;
-    }
-
     nav .Inav .PAMenu {
         padding: 0px 26px;
     }

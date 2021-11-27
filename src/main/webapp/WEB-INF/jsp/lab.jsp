@@ -60,13 +60,13 @@
             <c:forEach items="${article_laboratory}" var="al" varStatus="i">
             <label>${al.alLabel}</label>
             </c:forEach>
-            <a href="#" target="_blank" title="">更多</a>
+            <a href="labnews" target="_blank" title="">更多</a>
         </div>
         <div class="clear"></div>
     </div>
     <div class="right">
         <c:forEach items="${laboratories}" var="l" varStatus="i">
-            <a href="#" title="">
+            <a href="getlab?lid=${l.lId}" title="">
                 <img
                         height="32"
                         src="resources/images/${l.lPic}a.png"

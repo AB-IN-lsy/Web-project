@@ -8,7 +8,7 @@
 <!--
 此部分是teacher，即用于展示教师的风采
 版本：目前还未加入数据库的更新 2021-11-17
-    已加入数据库的更新 2021-11-22
+已加入数据库的更新 2021-11-22
 -->
 
 <%@ page pageEncoding="UTF-8" %>
@@ -29,7 +29,7 @@
                 <input autocomplete="off" class="animated" maxlength="28" name="SearchWords" placeholder="请输入查找的名字"
                        type="text" value=""/>
                 <input class="btn" type="submit" value=""/></form>
-            <a class="Amore" href="#">更多 ></a>
+            <a class="Amore" href="teacher" target="_blank">更多 ></a>
             <a class="Aprev" href="javascript:;"></a>
             <a class="Anext" href="javascript:;"></a>
         </div>
@@ -38,17 +38,21 @@
     <div class="contents">
         <ul data-num="0">
             <c:forEach items="${teachers}" var="t" varStatus="i">
-            <li><a class="img" href="#" target="_blank" title="姓名"><img alt="姓名" height="162"
-                                                                        src="resources/images/${t.tPic}"
-                                                                        title="姓名" width="120"/></a>
-                <a class="name" href="#" target="_blank" title="姓名">${t.tName}</a>
-                <a class="office" href="#" target="_blank" title="">${t.tUniversity}</a>
-                <a class="post" href="#" target="_blank" title="姓名">${t.tTitle}</a>
-                <a class="btn more" href="#" target="_blank" title="姓名">详细资料</a>
-                <a class="btn date" href="#">更多</a></li>
+                <li><a class="img" href="getteacher?tid=${t.tId}" target="_blank" title="${t.tName}"><img
+                        alt="${t.tName}" height="162"
+                        src="resources/images/${t.tPic}"
+                        title="${t.tName}"
+                        width="120"/></a>
+                    <a class="name" href="getteacher?tid=${t.tId}" target="_blank" title="${t.tName}">${t.tName}</a>
+                    <a class="office" href="getteacher?tid=${t.tId}" target="_blank"
+                       title="${t.tUniversity}">${t.tUniversity}</a>
+                    <a class="post" href="getteacher?tid=${t.tId}" target="_blank" title="${t.tTitle}">${t.tTitle}</a>
+                    <a class="btn more" href="getteacher?tid=${t.tId}" target="_blank" title="详细资料">详细资料</a>
+                    <a class="btn date" href="teacher" target="_blank">更多</a></li>
             </c:forEach>
             <div class="hackR"></div>
             <div class="hackL"></div>
+        </ul>
     </div>
     <div class="DFastSearch">
         <div class="DFTitle"><label>按姓名首字母查找</label>

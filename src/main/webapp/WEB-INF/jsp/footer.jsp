@@ -107,8 +107,11 @@
             </a>
         </p>
         <select id="ddlLinks">
-            <option value="0"><span>友情链接</span> HYPERLINK</option>
-            <option value="#">中华人民共和国教育委员会</option>
+            <option value="0"><span>其他链接</span> HYPERLINK</option>
+            <option value="https://ab-in.cn">AB-IN Blog</option>
+            <option value="https://ssh.ab-in.cn">AB-IN ssh</option>
+            <option value="https://kod.ab-in.cn">AB-IN kod</option>
+            <option value="https://game.ab-in.cn">AB-IN game</option>
         </select>
     </div>
     <div>

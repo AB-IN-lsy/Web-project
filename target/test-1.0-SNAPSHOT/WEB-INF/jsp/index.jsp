@@ -1,7 +1,7 @@
 <!--
 * @Author: NEFU AB-IN
 * @Date: 2021-11-17 20:23:29
-* @FilePath: \test\src\main\webapp\WEB-INF\jsp\index.jsp
+* @FilePath: \test\src\main\webapp\WEB-INF\jsp\index_news.jsp
 * @LastEditTime: 2021-11-20 21:50:31
 -->
 <%@ page pageEncoding="UTF-8" %>
