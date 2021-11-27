@@ -12,6 +12,12 @@
 
 
 
+* ### <font color=#000000 size=4 face=粗体>关于</font>
+
+  **请用chrome或者360浏览器打开！！！！**
+
+  （对于Edge的滑轮滚动Bug目前无法修复）
+
 * ### <font color=#000000 size=4 face=粗体>项目时长</font>
 
   ![image-20211127184940523](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img1.png)
