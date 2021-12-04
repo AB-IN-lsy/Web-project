@@ -6,6 +6,8 @@
 -->
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -315,7 +317,10 @@
                                                              width="48"/>
                                         </dd>
                                         <c:forEach items="${news}" var="n" varStatus="i">
-                                            <dd><em>${n.currentDate}</em><a href="#">${n.nLabel}</a></dd>
+                                            <dd><em><fmt:formatDate
+                                                    pattern="yyyy-MM-dd"
+                                                    value="${n.insertTime}"/></em>
+                                                <a href="getnews?nid=${n.nId }">${n.nLabel}</a></dd>
                                         </c:forEach>
                                     </dl>
                                     <div class="BottomHidden"></div>
@@ -328,7 +333,7 @@
                                         </dd>
                                         <c:forEach items="${article_laboratory}" var="al" varStatus="i">
                                             <c:if test="${i.count == 1}">
-                                                <dd><em>${al.alLabel}</em><a href="#">${al.alContent}</a></dd>
+                                                <dd><em>${al.alLabel}</em><a href="getlabnews?alid=${al.alId }">${al.alContent}</a></dd>
                                             </c:if>
                                         </c:forEach>
                                     </dl>

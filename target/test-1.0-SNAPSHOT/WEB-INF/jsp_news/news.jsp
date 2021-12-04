@@ -10,6 +10,8 @@
 
 <body>
 <label>id：</label>${news.nId }<br>
+<label>author：</label>${news.nAuthor }<br>
+<label>email：</label>${news.nEmail }<br>
 <label>Label：</label>${news.nLabel } <br>
 <label>Content：</label>${news.nContent } <br>
 <label>insert_time：</label>${news.insertTime } <br>

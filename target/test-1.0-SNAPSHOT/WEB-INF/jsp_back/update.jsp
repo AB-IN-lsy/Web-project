@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
+<% String path = request.getContextPath(); %>
+<!DOCTYPE html >
+<html>
+<head>
+    <title>Update</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="<%=path%>/css/web.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<body>
+<form name="myform" method="post" action="update">
+    <div id="wrapper">
+
+        <div id="header">
+
+            <div id="logo"><img src="resources/images/logo.gif"/></div>
+            <div id="blog-header">
+                <h1 class="blog-title"><a href="findall">后端文章编辑器</a></h1>
+                <div class="blog-desc">Welcome</div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="findall">留言首页</a></li>
+                    <li><a href="write">签写留言</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="mainWrapper">
+            <div id="content" class="content-wide">
+
+                <div class="textbox">
+                    <div class="textbox-title">
+                        <h4>签名留言</h4>
+                    </div>
+                    <div class="textbox-content">
+                        <input name="nid" type="hidden" value="${news.nId}">
+                        <li>昵称:
+                            <input name="author" type="text" id="yhm" placeholder = ${news.nAuthor}></li>
+                        <li>标题:
+                            <input name="label" type="text" id="label" placeholder = ${news.nLabel}></li>
+
+                        <li>邮箱:
+                            <input name="email" type="text" id="email" placeholder = ${news.nEmail}></li>
+                        <li>内容:
+                            <textarea name="content" cols="70" rows="20" placeholder = ${news.nContent}></textarea></li>
+                    </div>
+                    <div class="textbox-bottom">
+                        <input type="submit" name="regsubmit" value="提交" class="btn">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div id="innerFooter">Powered by AB-IN; Copyright &copy;</div>
+        </div>
+
+    </div>
+</form>
+</body>
+</html>

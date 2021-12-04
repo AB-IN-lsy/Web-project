@@ -67,7 +67,7 @@ $(function () {
     });
     $("#BannerSwitch").click(function (e) {
         $t = $(this);
-        if ($t.data("type") == 0) {
+        if ($t.data("type") === 0) {
             $(".bannerBase .tools").stop().animate({"right": (Kunyi.BaseMark.width() >= 1200 ? "-220px" : "-256px")}, 588, "easeOutQuart", function () {
                 $t.addClass("hidden");
                 $t.data("type", 1);
@@ -93,15 +93,15 @@ $(function () {
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 5);
             $w = 240 * 5;
-            $plus = 52;
+            $plus = 55;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 4);
             $w = (240 + 6) * 4;
-            $plus = 39;
+            $plus = 42;
         } else {
             $Size = Math.ceil($LiSize / 6);
             $w = (240 + 12) * 6;
-            $plus = 52;
+            $plus = 55;
         }
         /*
         这里的plus与下面的专业的是不同的，调试了好久，因为除数不同了，导致plus的不同，bug已修复
@@ -131,15 +131,15 @@ $(function () {
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 5);
             $w = 240 * 5;
-            $plus = 52;
+            $plus = 55;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 4);
             $w = (240 + 6) * 4;
-            $plus = 39;
+            $plus = 42;
         } else {
             $Size = Math.ceil($LiSize / 6);
             $w = (240 + 12) * 6;
-            $plus = 52;
+            $plus = 55;
         }
         if ($Index < $Size) {
             $obj.data("num", $Index);

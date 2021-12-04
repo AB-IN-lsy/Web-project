@@ -16,6 +16,7 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c"
            uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,7 +80,9 @@
                                 width="126"
                         /></a>
                         <div>
-                            <span>${n.currentDate}</span><a href="getnews?nid=${n.nId }" target="_blank"
+                            <span><fmt:formatDate
+                                    pattern="yyyy-MM-dd"
+                                    value="${n.insertTime}"/></span><a href="getnews?nid=${n.nId }" target="_blank"
                         >${n.nLabel}</a>
                         </div>
                     </c:if>
@@ -90,7 +93,9 @@
                 <c:forEach items="${news}" var="n" varStatus="i">
                     <c:if test="${i.count > 1}">
                         <li>
-                            <span>${n.currentDate}</span>
+                            <span><fmt:formatDate
+                                    pattern="yyyy-MM-dd"
+                                    value="${n.insertTime}"/></span>
                             <a href="getnews?nid=${n.nId }" target="_blank"
                             >${n.nLabel}</a>
                         </li>

@@ -11,7 +11,9 @@
 <ul>
     <c:forEach items="${news}" var="n" varStatus="i">
         <li>
-            <span>${n.currentDate}</span>
+            <span><fmt:formatDate
+                    pattern="yyyy-MM-dd"
+                    value="${n.insertTime}"/></span>
             <a href="getnews?nid=${n.nId }" target="_blank"
             >${n.nLabel}</a>
         </li>

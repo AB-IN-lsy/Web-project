@@ -36,14 +36,17 @@ public class GetNewsServlet extends HttpServlet {
         从数据库中获取
          */
         try (Connection conn = DataSourceUtils.getConnection();
-             PreparedStatement st = conn.prepareStatement(sql)) {
+             PreparedStatement st = conn.prepareStatement(sql
+             )) {
             st.setInt(1, nid);
             try (ResultSet rs = st.executeQuery()) {
                 while (rs.next()) {
                     news = new News();
                     news.setnId(rs.getInt("n_id"));
-                    news.setnLabel(rs.getString("n_label"));
+                    news.setnAuthor(rs.getString("n_author"));
                     news.setnContent(rs.getString("n_content"));
+                    news.setnEmail(rs.getString("n_email"));
+                    news.setnLabel(rs.getString("n_label"));
                     news.setInsertTime(rs.getTimestamp("create_time"));
                     news.setUpdateTime(rs.getTimestamp("update_time"));
                 }

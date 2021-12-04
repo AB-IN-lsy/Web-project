@@ -9,33 +9,41 @@ import java.util.Date;
  * @Project : test
  */
 public class News {
-
-    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd");
     private int nId;
-    private String nLabel;
+    private String nAuthor;
     private String nContent;
+    private String nEmail;
+    private String nLabel;
     private Date insertTime;
     private Date updateTime;
-    private String currentDate;
 
-    public News(int nId, String nLabel, String nContent, Date insertTime, Date updateTime, String currentDate) {
+    public News(int nId, String nAuthor, String nContent, String nEmail, String nLabel, Date insertTime, Date updateTime) {
         this.nId = nId;
-        this.nLabel = nLabel;
+        this.nAuthor = nAuthor;
         this.nContent = nContent;
+        this.nEmail = nEmail;
+        this.nLabel = nLabel;
         this.insertTime = insertTime;
         this.updateTime = updateTime;
-        this.currentDate = currentDate;
     }
 
     public News() {
     }
 
-    public String getCurrentDate() {
-        return currentDate;
+    public String getnAuthor() {
+        return nAuthor;
     }
 
-    public void setCurrentDate(String currentDate) {
-        this.currentDate = currentDate;
+    public void setnAuthor(String nAuthor) {
+        this.nAuthor = nAuthor;
+    }
+
+    public String getnEmail() {
+        return nEmail;
+    }
+
+    public void setnEmail(String nEmail) {
+        this.nEmail = nEmail;
     }
 
     public int getnId() {

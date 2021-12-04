@@ -25,7 +25,6 @@ import java.util.List;
 
 @WebServlet("/index")
 public class IndexServlet extends HttpServlet {
-    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd");
     protected List<News> getNews() {
         List<News> news = new ArrayList<>();
         try (Connection conn = DataSourceUtils.getConnection();
@@ -33,11 +32,12 @@ public class IndexServlet extends HttpServlet {
              ResultSet rs = st.executeQuery()) {
             while (rs.next()) {
                 News news1 = new News(rs.getInt("n_id"),
-                        rs.getString("n_label"),
+                        rs.getString("n_author"),
                         rs.getString("n_content"),
+                        rs.getString("n_email"),
+                        rs.getString("n_label"),
                         rs.getTimestamp("create_time"),
-                        rs.getTimestamp("update_time"),
-                        ft.format(rs.getTimestamp("create_time")));
+                        rs.getTimestamp("update_time"));
                 news.add(news1);
             }
         } catch (SQLException e) {
