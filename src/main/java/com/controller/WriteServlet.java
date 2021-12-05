@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.entity.User;
 import com.util.DataSourceUtils;
 
 import javax.servlet.RequestDispatcher;
@@ -20,8 +21,14 @@ import java.sql.SQLException;
  */
 @WebServlet("/write")
 public class WriteServlet extends HttpServlet {
+
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+            return;
+        }
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/jsp_back/new.jsp");
         rd.forward(request, response);
     }

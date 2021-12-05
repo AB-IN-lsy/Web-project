@@ -22,8 +22,9 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li><a href="findall">留言首页</a></li>
-                    <li><a href="write">签写留言</a></li>
+                    <li><a href="findall">文章首页</a></li>
+                    <li><a href="write">添加文章</a></li>
+                    <li><a href="index">返回首页</a></li>
                 </ul>
             </div>
 

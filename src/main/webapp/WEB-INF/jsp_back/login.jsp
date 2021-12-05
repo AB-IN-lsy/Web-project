@@ -1,10 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
+<<%@ page language="java" contentType="text/html; charset=UTF-8"
+          pageEncoding="UTF-8" %>
+<% String path = request.getContextPath(); %>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>登陆</title>
+    <title>Login</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="images/web.css" rel="stylesheet" type="text/css">
+    <link href="<%=path%>/css/web.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -24,12 +26,12 @@
                     <tr>
                         <td colspan="2" align="center">
                             <b>帐户:</b>
-                            <input name="yhm" type="text" id="yhm" value="abc" size="12"></td>
+                            <input name="account" type="text" id="yhm" value="admin" size="12"></td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center">
                             <b>密码:</b>
-                            <input name="yhmm" type="password" id="yhmm" value="" size="12"></td>
+                            <input name="passwd" type="password" id="yhmm" value="20010831" size="12"></td>
                     </tr>
 
                     <tr>

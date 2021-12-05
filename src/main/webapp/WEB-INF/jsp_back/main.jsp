@@ -7,6 +7,11 @@
 完成了增，删，改
 查应该明天讲，或者明天讲登录，总之快完成了
 
+2021/12/5 星期日
+完成了查的工作
+运用了like模糊查询，效果显著，DEBUG了好长时间
+不过效果很好，后端结束！
+
 ps:为了迎合老师的news库，将我的news库中增加了很多列，
 重写了很多servlet，只要效果好，心里还是很满意的
 pss:借鉴的老师代码应该不算抄袭吧。。。
@@ -34,17 +39,19 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
         </div>
         <div id="menu">
             <ul>
-                <li><a href="findall">留言首页</a></li>
-                <li><a href="write">签写留言</a></li>
+                <li><a href="findall">文章首页</a></li>
+                <li><a href="write">添加文章</a></li>
+                <li><a href="index">返回首页</a></li>
             </ul>
         </div>
     </div>
 
     <div id="mainWrapper">
         <div id="content" class="content-wide">
-            <form action="#" method="post">
-                姓名：<input type="text" name="userName"/>邮件：<input type="text" name="email"/>内容：<input type="text"
-                                                                                                     name="content"/>
+            <form action="search" method="post">
+                姓名：<input type="text" name="author"/>
+                邮件：<input type="text" name="email"/>
+                内容：<input type="text" name="content"/>
                 <input type="submit" value="查找"/>
             </form>
             <br><br>

@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.entity.News;
+import com.entity.User;
 import com.util.DataSourceUtils;
 
 import java.io.IOException;
@@ -21,6 +22,11 @@ public class UpdateServlet extends HttpServlet {
 
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+            return;
+        }
         String label = request.getParameter("label");
         String author = request.getParameter("author");
         String email = request.getParameter("email");

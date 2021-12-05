@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.entity.News;
+import com.entity.User;
 import com.util.DataSourceUtils;
 
 import static java.lang.Integer.parseInt;
@@ -22,6 +23,11 @@ import static java.lang.Integer.parseInt;
 public class FindOneServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+            return;
+        }
         News news = null;
         int nid = parseInt(request.getParameter("nid"));
         String sql = "select * from news where n_id=?";

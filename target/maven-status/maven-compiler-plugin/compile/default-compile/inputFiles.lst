@@ -11,10 +11,12 @@ D:\Code\Web\web-workplace\test\src\main\java\com\entity\Laboratory.java
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\News.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\LabServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\util\DataSourceUtils.java
+D:\Code\Web\web-workplace\test\src\main\java\com\controller\LoginServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\UpdateServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\FindOneServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\MajorServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\WriteServlet.java
+D:\Code\Web\web-workplace\test\src\main\java\com\controller\SearchServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\ArticleLaboratory.java
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\User.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\GetLabServlet.java

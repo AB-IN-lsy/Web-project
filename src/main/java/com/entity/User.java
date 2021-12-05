@@ -25,6 +25,11 @@ public class User {
         this.updateTime = updateTime;
     }
 
+    public User(String uAccount, String uPasswd) {
+        this.uAccount = uAccount;
+        this.uPasswd = uPasswd;
+    }
+
     public User() {
 
     }

@@ -31,15 +31,15 @@
                 <li><a href="#">奥林新闻</a></li>
                 <li><a href="#">奥林论坛</a></li>
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a class="loginIn" href="登陆.html" target="_self">登陆</a>
+                <a class="loginIn" href="login" target="_self">登陆后台</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="loginUp" href="注册.html" target="_self">注册</a>
+<%--                <a class="loginUp" href="注册.html" target="_self">注册</a>--%>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </ul>
         </div>
     </div>
     <div class="BaseMark logoBase">
-        <a href="#"><img class="load" height="104" src="resources/images/logo.png" width="151"/></a>
+        <a href="index"><img class="load" height="104" src="resources/images/logo.png" width="151"/></a>
         <div class="searchBase">
             <div class="itemBase">
                 <div class="divType">校内搜索</div>

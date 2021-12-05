@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.entity.ArticleLaboratory;
+import com.entity.User;
 import com.util.DataSourceUtils;
 
 import java.io.IOException;
@@ -20,6 +21,11 @@ import javax.servlet.http.HttpServletResponse;
 public class DeleteServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+            return;
+        }
         int nid = Integer.parseInt(request.getParameter("nid"));
         try (Connection conn = DataSourceUtils.getConnection();
              PreparedStatement st = conn.prepareStatement(" delete from news where n_id = ? ")) {

@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.entity.News;
+import com.entity.User;
 import com.util.DataSourceUtils;
 
 import java.io.IOException;
@@ -28,6 +29,11 @@ public class SaveServlet extends HttpServlet {
 
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+            return;
+        }
         //接收请求中的数据
         String label = request.getParameter("label");
         String author = request.getParameter("author");

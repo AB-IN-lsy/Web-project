@@ -1306,6 +1306,11 @@ nav .nav .PMenu:hover img.animated, nav .nav .PMenu.current img.animated {
     display: block;
     line-height: 18px;
 }
+.nav_Menu02 dl dd em a{
+    color: #bda179;
+    display: block;
+    line-height: 18px;
+}
 
 .nav_Menu02 a:hover {
     text-decoration: underline;

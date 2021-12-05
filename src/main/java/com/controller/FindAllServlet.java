@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.entity.News;
+import com.entity.User;
 import com.util.DataSourceUtils;
 
 import java.io.IOException;
@@ -24,6 +25,11 @@ public class FindAllServlet extends HttpServlet {
 
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        if(user == null){
+            response.sendRedirect(request.getContextPath() + "/login");
+            return;
+        }
         List<News> news = new ArrayList<>();
         try (Connection conn = DataSourceUtils.getConnection();
              PreparedStatement st = conn.prepareStatement("select * from news");
