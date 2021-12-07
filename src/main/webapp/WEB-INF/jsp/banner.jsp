@@ -7,8 +7,8 @@
 
 <!--
 此部分是banner，即用于图片的滑动，对接gif.js
-版本: Expand: 可自定义加入多个图片 2021-11-20
-     Method: 加入list item的同时，加下面的animated按钮，毕竟实现的方法就是每过一段时间就让animated新增状态为on，进而切换图片 2021-11-21
+版本: Expand: 可自定义加入多个图片 2021-11-22
+     Method: 加入list item的同时，加下面的animated按钮，毕竟实现的方法就是每过一段时间就让animated新增状态为on，进而切换图片 2021-11-22
 -->
 
 <%@ page pageEncoding="UTF-8" %>
