@@ -118,7 +118,7 @@
             <ul>
                 <li class="PMenu"><a class="PAMenu" href="index" title="计科首页">计科首页</a></li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu0" title="学院指南">学院指南</a>
+                    <a class="PAMenu" href="https://aulin.nefu.edu.cn/" id="Nav_AMenu0" title="学院指南">学院指南</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -153,7 +153,7 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu1" title="学校概况">学校概况</a>
+                    <a class="PAMenu" href="https://www.nefu.edu.cn/" id="Nav_AMenu1" title="学校概况">学校概况</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -365,6 +365,10 @@
                             </div>
                         </div>
                     </div>
+                </li>
+                <li class="PMenu">
+                    <img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="lab" id="Nav_AMenu7" title="新闻动态">实验室览</a>
                 </li>
             </ul>
         </div>

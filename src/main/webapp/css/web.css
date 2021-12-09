@@ -8,6 +8,19 @@ body {
     margin: 0px;
     padding: 0px;
 }
+#title{
+    background: #0066ff;
+}
+input[type="submit"], input[type="reset"]{
+    background: #0066ff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background: #66ACF3;
+}
 
 a {
     color: #a00;

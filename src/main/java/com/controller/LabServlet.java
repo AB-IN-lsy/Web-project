@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.Laboratory;
 import com.util.DataSourceUtils;
 
@@ -23,29 +24,14 @@ import java.util.List;
  */
 @WebServlet("/lab")
 public class LabServlet extends HttpServlet {
-    protected List<Laboratory> getLaboratories() {
-        List<Laboratory> laboratories = new ArrayList<>();
-        try (Connection conn = DataSourceUtils.getConnection();
-             PreparedStatement st = conn.prepareStatement("select * from laboratories");
-             ResultSet rs = st.executeQuery()) {
-            while (rs.next()) {
-                Laboratory laboratory = new Laboratory(rs.getInt("l_id"),
-                        rs.getString("l_name"),
-                        rs.getString("l_label"),
-                        rs.getString("l_pic"),
-                        rs.getString("l_content"),
-                        rs.getTimestamp("create_time"),
-                        rs.getTimestamp("update_time"));
-                laboratories.add(laboratory);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return laboratories;
-    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("laboratories", getLaboratories());
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.getRequestDispatcher("WEB-INF/jsp_lab/index_lab.jsp").forward(req, resp);
     }
 }

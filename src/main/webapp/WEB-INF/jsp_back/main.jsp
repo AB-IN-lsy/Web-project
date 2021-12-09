@@ -52,7 +52,7 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
                 姓名：<input type="text" name="author"/>
                 邮件：<input type="text" name="email"/>
                 内容：<input type="text" name="content"/>
-                <input type="submit" value="查找"/>
+                <a><input type="submit" value="查找"/></a>
             </form>
             <br><br>
 
@@ -60,7 +60,7 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
                 <div class="textbox">
                     <div class="textbox-title">
 
-                        <div class="textbox-label">[标题：${n.nLabel} ][留言者:${n.nAuthor} ][留言日期:<fmt:formatDate
+                        <div class="textbox-label">[标题：${n.nLabel} ][发布者:${n.nAuthor} ][发布日期:<fmt:formatDate
                                 pattern="yyyy-MM-dd"
                                 value="${n.insertTime}"/> ]</div>
                     </div>

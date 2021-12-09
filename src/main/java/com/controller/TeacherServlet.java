@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.Teacher;
 import com.util.DataSourceUtils;
 
@@ -23,29 +24,14 @@ import java.util.List;
  */
 @WebServlet("/teacher")
 public class TeacherServlet extends HttpServlet {
-    protected List<Teacher> getTeachers() {
-        List<Teacher> teachers = new ArrayList<>();
-        try (Connection conn = DataSourceUtils.getConnection();
-             PreparedStatement st = conn.prepareStatement("select * from teachers");
-             ResultSet rs = st.executeQuery()) {
-            while (rs.next()) {
-                Teacher teacher = new Teacher(rs.getInt("t_id"),
-                        rs.getString("t_name"),
-                        rs.getString("t_university"),
-                        rs.getString("t_title"),
-                        rs.getString("t_pic"),
-                        rs.getTimestamp("create_time"),
-                        rs.getTimestamp("update_time"));
-                teachers.add(teacher);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return teachers;
-    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("teachers", getTeachers());
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.getRequestDispatcher("WEB-INF/jsp_teacher/index_teacher.jsp").forward(req, resp);
     }
 }

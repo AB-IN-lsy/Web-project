@@ -24,11 +24,10 @@
     加入了从数据库中利用主码进行的查询，并打开详情页 2021/11/24
 -->
 <nav>
-    <div class="navBase">
+    <div class="navBase" >
         <div class="quickMenuBase" data-type="0">
             <div class="quickMenu01"><a href="index" target="_self"></a> 走&nbsp;进&nbsp;计 科</div>
-            <div class="quickMenu02 animated"></div>
-            <div class="quickMenus" style="display: none">
+            <div class="quickMenus" >
                 <ul class="firstUl">
                     <li class="first">
                         <a class="firstA" href="#" target="_self">
@@ -117,7 +116,7 @@
             <ul>
                 <li class="PMenu"><a class="PAMenu" href="index" title="计科首页">计科首页</a></li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu0" title="学院指南">学院指南</a>
+                    <a class="PAMenu" href="https://aulin.nefu.edu.cn/" id="Nav_AMenu0" title="学院指南">学院指南</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -152,7 +151,7 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu1" title="学校概况">学校概况</a>
+                    <a class="PAMenu" href="https://www.nefu.edu.cn/" id="Nav_AMenu1" title="学校概况">学校概况</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -364,6 +363,10 @@
                             </div>
                         </div>
                     </div>
+                </li>
+                <li class="PMenu">
+                    <img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="lab" id="Nav_AMenu7" title="新闻动态">实验室览</a>
                 </li>
             </ul>
         </div>

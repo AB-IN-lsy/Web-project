@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.News;
 import com.util.DataSourceUtils;
 
@@ -25,30 +26,14 @@ import java.util.List;
 
 @WebServlet("/news")
 public class NewsServlet extends HttpServlet {
-    protected List<News> getNews() {
-        List<News> news = new ArrayList<>();
-        try (Connection conn = DataSourceUtils.getConnection();
-             PreparedStatement st = conn.prepareStatement("select * from news");
-             ResultSet rs = st.executeQuery()) {
-            while (rs.next()) {
-                News news1 = new News(rs.getInt("n_id"),
-                        rs.getString("n_author"),
-                        rs.getString("n_content"),
-                        rs.getString("n_email"),
-                        rs.getString("n_label"),
-                        rs.getTimestamp("create_time"),
-                        rs.getTimestamp("update_time"));
-                news.add(news1);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return news;
-    }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("news", getNews());
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.getRequestDispatcher("WEB-INF/jsp_news/index_news.jsp")
                 .forward(req, resp);
     }

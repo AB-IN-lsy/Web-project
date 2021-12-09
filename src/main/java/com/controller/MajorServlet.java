@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.Major;
 import com.util.DataSourceUtils;
 
@@ -23,29 +24,14 @@ import java.util.List;
  */
 @WebServlet("/major")
 public class MajorServlet extends HttpServlet {
-    protected List<Major> getMajors() {
-        List<Major> majors = new ArrayList<>();
-        try (Connection conn = DataSourceUtils.getConnection();
-             PreparedStatement st = conn.prepareStatement("select * from majors");
-             ResultSet rs = st.executeQuery()) {
-            while (rs.next()) {
-                Major major = new Major(rs.getInt("m_id"),
-                        rs.getString("m_name"),
-                        rs.getString("m_label"),
-                        rs.getString("m_pic"),
-                        rs.getString("m_content"),
-                        rs.getTimestamp("create_time"),
-                        rs.getTimestamp("update_time"));
-                majors.add(major);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return majors;
-    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("majors", getMajors());
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.getRequestDispatcher("WEB-INF/jsp_major/index_major.jsp").forward(req, resp);
     }
 }

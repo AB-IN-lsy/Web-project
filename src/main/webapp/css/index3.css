@@ -1,0 +1,106 @@
+#footer {
+    margin-top: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 2em;
+}
+
+.picture{
+    text-align: center;
+    margin: 40px 10px 10px 10px;
+}
+
+
+#one {
+    color: #29596f;
+    font-size: 30px;
+}
+
+#two {
+    color: #29596f;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quickMenus {
+    display: none;
+}
+
+#content ul li a {
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+#content ul li a:hover {
+    color: #ff7544;
+}
+
+.title03 {
+    text-align: center;
+    font-size: 16px;
+    color: #00785A;
+    line-height: 24px;
+}
+
+.content01 {
+    padding: 10px 10px 10px 10px;
+    text-align: justify-all;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.textbox {
+    border: solid 1px #00785A;
+    padding: 1px;
+    margin-bottom: 10px;
+
+}
+
+.textbox-title {
+    word-break: break-all;
+    position: relative; /* IE Fix for background image */
+    padding: 4px;
+    font-size: 12px;
+    background-color: #00785A;
+}
+
+.textbox-title h4 {
+    word-break: break-all;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.textbox-label {
+    font-size: 12px;
+    padding: 3px;
+    color: #FFFFFF
+}
+
+.textbox-fontsize {
+    padding: 5px;
+    text-align: right;
+}
+
+.textbox-content {
+    width: 710px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.textbox-content li {
+    list-style: none;
+}
+
+.textbox-bottom {
+    font-size: 12px;
+    padding: 5px;
+}

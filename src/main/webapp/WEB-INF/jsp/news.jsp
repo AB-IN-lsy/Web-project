@@ -26,8 +26,7 @@
 
 <section class="NewsBase BaseMark">
     <div class="tools">
-        <a href="#"
-        ><img
+        <a ><img
                 alt=""
                 class="load"
                 height="52"
@@ -35,7 +34,7 @@
                 width="52"
         />
             <em>专业医护平台</em></a
-        ><a class="last" href="#">
+        ><a class="last">
         <img
                 class="load"
                 height="52"
@@ -44,7 +43,7 @@
         />
         <em>专业查询平台</em></a
     >
-        <a href="#">
+        <a>
             <img
                     class="load"
                     height="52"
@@ -53,15 +52,14 @@
             />
             <em>专业智慧平台</em></a
         >
-        <a href="#"
-        ><img
+        <a><img
                 class="load"
                 height="52"
                 src="resources/images/ico_002.gif"
                 width="52"
         />
-            <em>专业数据平台</em></a
-        >
+            <em>专业数据平台</em>
+        </a>
     </div>
     <div class="noticeBase">
         <div class="notice notice01">

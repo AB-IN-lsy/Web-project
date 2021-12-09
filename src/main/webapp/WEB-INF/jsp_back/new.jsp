@@ -37,7 +37,7 @@
                     </div>
                     <div class="textbox-content">
                         <li>昵称:
-                            <input name="author" type="text" id="yhm"></li>
+                            <input name="author" type="text" id="yhm" value="admin" disabled></li>
                         <li>标题:
                             <input name="label" type="text" id="label"></li>
 
@@ -47,7 +47,7 @@
                             <textarea name="content" cols="70" rows="20"></textarea></li>
                     </div>
                     <div class="textbox-bottom">
-                        <input type="submit" name="regsubmit" value="提交" class="btn">
+                        <a><input type="submit" name="regsubmit" value="提交" class="btn"></a>
                     </div>
                 </div>
 

@@ -26,11 +26,11 @@
     <div class="toolBase">
         <div class="BaseMark">
             <ul>
-                <li class="first"><a href="#">奥林地图</a></li>
-                <li><a href="#">奥林信箱</a></li>
-                <li><a href="#">奥林OA</a></li>
-                <li><a href="#">奥林新闻</a></li>
-                <li><a href="#">奥林论坛</a></li>
+                <li class="first"><a href="https://aulin.nefu.edu.cn/">奥林地图</a></li>
+                <li><a href="https://aulin.nefu.edu.cn/">奥林信箱</a></li>
+                <li><a href="https://aulin.nefu.edu.cn/">奥林OA</a></li>
+                <li><a href="https://aulin.nefu.edu.cn/">奥林新闻</a></li>
+                <li><a href="https://aulin.nefu.edu.cn/">奥林论坛</a></li>
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a class="loginIn" href="login" target="_self">登陆后台</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

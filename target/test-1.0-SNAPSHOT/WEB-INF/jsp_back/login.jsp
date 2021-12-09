@@ -1,5 +1,6 @@
-<<%@ page language="java" contentType="text/html; charset=UTF-8"
-          pageEncoding="UTF-8" %>
+<
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 <% String path = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
@@ -14,9 +15,9 @@
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <table width="400" border="0" align="center" cellpadding="2" cellspacing="1" bgcolor="#000066">
-    <tr>
+    <tr id="title">
         <td height="25">
-            <div align="center"><font color="#FFFFFF"><strong>请先登陆</strong></font></div>
+            <div align="center" ><font color="#FFFFFF"><strong>请先登陆</strong></font></div>
         </td>
     </tr>
     <tr>
@@ -37,8 +38,9 @@
                     <tr>
 
                         <td align="center">
-                            <input type="submit" name="Submit" value="登陆"> &nbsp;&nbsp;&nbsp;
-                            <input type="reset" name="Submit2" value="取消"></td>
+                            <input class="animated" type="submit" name="Submit" value="登陆"> &nbsp;&nbsp;&nbsp;
+                            <input class="animated" type="reset" name="Submit2" value="取消">
+                        </td>
                     </tr>
                 </table>
             </form>

@@ -24,10 +24,10 @@
     加入了从数据库中利用主码进行的查询，并打开详情页 2021/11/24
 -->
 <nav>
-    <div class="navBase">
+    <div class="navBase" >
         <div class="quickMenuBase" data-type="0">
-            <div class="quickMenu03"><a href="#" target="_self"></a> 走&nbsp;进&nbsp;计 科</div>
-            <div class="quickMenus">
+            <div class="quickMenu01"><a href="index" target="_self"></a> 走&nbsp;进&nbsp;计 科</div>
+            <div class="quickMenus" >
                 <ul class="firstUl">
                     <li class="first">
                         <a class="firstA" href="#" target="_self">
@@ -114,9 +114,9 @@
 
         <div class="nav Inav">
             <ul>
-                <li class="PMenu"><a class="PAMenu" href="#" title="计科首页">计科首页</a></li>
+                <li class="PMenu"><a class="PAMenu" href="index" title="计科首页">计科首页</a></li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu0" title="学院指南">学院指南</a>
+                    <a class="PAMenu" href="https://aulin.nefu.edu.cn/" id="Nav_AMenu0" title="学院指南">学院指南</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -151,7 +151,7 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu1" title="学校概况">学校概况</a>
+                    <a class="PAMenu" href="https://www.nefu.edu.cn/" id="Nav_AMenu1" title="学校概况">学校概况</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -189,19 +189,15 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu current"><img class="animated" height="8" src="resources/images/ico_014.png"
-                                               width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="labnews" id="Nav_AMenu2" title="科学研究">科学研究</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
                                 <div class="navMenus">
                                     <ul>
-                                        <li class="first"><a href="#" title="">科研项目</a></li>
-                                        <li><a href=" " title=" ">科研机构</a></li>
-                                        <li><a href=" " title=" ">科研合作</a></li>
-                                        <li><a href=" " title=" ">科研成果与知识产权</a></li>
-                                        <li><a href=" " title=" ">学术交流</a></li>
+                                        <li class="first"><a href="labnews" title="">科研论坛</a></li>
+                                        <li><a href="lab" title=" ">实验室</a></li>
                                     </ul>
                                 </div>
                                 <div class="navSub2 nav_Menu02 autoPic">
@@ -209,16 +205,25 @@
                                         <dt>科学论坛</dt>
                                         <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg"
                                                              width="48"/>
-                                        </dd>
+                                            <c:forEach items="${article_laboratory}" var="al" varStatus="i">
+                                        <dd><em><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></em></dd>
+                                        <c:if test="${i.count == 1}">
+                                            <dd>${al.alContent}</dd>
+                                        </c:if>
+                                        </c:forEach>
                                     </dl>
                                     <div class="BottomHidden"></div>
                                 </div>
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
-                                        <dt>学术期刊</dt>
+                                        <dt>实验室</dt>
                                         <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg"
                                                              width="48"/>
-
+                                            <c:forEach items="${laboratories}" var="l" varStatus="i">
+                                        <dd><em><a class="animated" href="getlab?lid=${l.lId}">${l.lName}</a></em>
+                                        <dd>
+                                            <span class="animated">${l.lLabel}</span>
+                                            </c:forEach>
                                     </dl>
                                     <div class="BottomHidden"></div>
                                 </div>
@@ -228,13 +233,13 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu3" title="教育教学">教育教学</a>
+                    <a class="PAMenu" href="major" id="Nav_AMenu3" title="教育教学">教育教学</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
                                 <div class="navMenus">
                                     <ul>
-                                        <li class="first"><a href="#">教育动态</a></li>
+                                        <li class="first"><a href="major">专业预览</a></li>
                                         <li><a href="#">研究生教育</a></li>
                                         <li><a href="#">本科生教育</a></li>
                                         <li><a href="#">留学生教育</a></li>
@@ -244,11 +249,16 @@
                                 </div>
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
-                                        <dt>教育动态</dt>
-                                        <dd class="pic"><img alt="教育动态" height="48" src="resources/images/ico_046.jpg"
+                                        <dt>专业预览</dt>
+                                        <dd class="pic"><img alt="专业预览" height="48" src="resources/images/ico_046.jpg"
                                                              width="48"/></dd>
-                                        <dd><em>2019年</em><a href="#" title="">奥林学院计算机科学与技术专业正式成立</a></dd>
-                                        <dd><em>2020-至今</em><a href="#" title="">我们正在茁壮成长</a></dd>
+                                        <c:forEach items="${majors}" var="m" varStatus="i">
+                                            <c:if test="${i.count <= 5}">
+                                                <dd><em><a class="office" href="getmajor?mid=${m.mId}"
+                                                           title="${m.mName}" target="_blank">${m.mName}</a></em></dd>
+                                                <dd><p>${m.mLabel}</p></dd>
+                                            </c:if>
+                                        </c:forEach>
                                     </dl>
                                     <div class="BottomHidden"></div>
                                 </div>
@@ -273,25 +283,34 @@
                             <div class="navbox BaseMark">
                                 <div class="navMenus">
                                     <ul>
-                                        <li class="first"><a href="#" title="科普文章">科普文章</a></li>
-                                        <li><a href="#" title="专题讲座">专题讲座</a></li>
+                                        <li class="first"><a href="teacher" title="杰出教师">杰出教师</a></li>
+                                        <li class="first"><a href="#" title="杰出人才">杰出人才</a></li>
                                     </ul>
                                 </div>
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
-                                        <dt>专家讲座</dt>
+                                        <dt>杰出教师</dt>
                                         <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg"
                                                              width="48"/>
-
+                                            <c:forEach items="${teachers}" var="t" varStatus="i">
+                                            <c:if test="${i.count <= 4}">
+                                        <dd><em><a class="name" href="getteacher?tid=${t.tId}" target="_blank"
+                                                   title="${t.tName}">${t.tName}</a></em>
+                                        <dd>
+                                            <p>${t.tUniversity} ${t.tTitle}</p>
+                                            </c:if>
+                                            </c:forEach>
                                     </dl>
                                     <div class="BottomHidden"></div>
                                 </div>
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
-                                        <dt>杰出校友</dt>
+                                        <dt>杰出人才</dt>
                                         <dd class="pic"><img alt="" height="48" src="resources/images/ico_050.jpg"
                                                              width="48"/>
                                         </dd>
+                                        <dd><em><a href="https://www.ab-in.cn">刘思远</a></em></dd>
+                                        <span>Powered by NEFU AB-IN</span>
                                     </dl>
                                     <div class="BottomHidden"></div>
                                 </div>
@@ -300,7 +319,7 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu5" title="新闻动态">新闻动态</a>
+                    <a class="PAMenu" href="news" id="Nav_AMenu5" title="新闻动态">新闻动态</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -333,8 +352,8 @@
                                         </dd>
                                         <c:forEach items="${article_laboratory}" var="al" varStatus="i">
                                             <c:if test="${i.count == 1}">
-                                                <dd><em>${al.alLabel}</em><a
-                                                        href="getlabnews?alid=${al.alId }">${al.alContent}</a></dd>
+                                                <dd><em><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></em></dd>
+                                                <span>${al.alContent}</span>
                                             </c:if>
                                         </c:forEach>
                                     </dl>
@@ -344,6 +363,10 @@
                             </div>
                         </div>
                     </div>
+                </li>
+                <li class="PMenu current">
+                    <img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="lab" id="Nav_AMenu7" title="新闻动态">实验室览</a>
                 </li>
             </ul>
         </div>

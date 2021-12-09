@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.ArticleLaboratory;
 import com.entity.Major;
 import com.util.DataSourceUtils;
@@ -54,6 +55,12 @@ public class GetMajorServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("major", major);
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.getRequestDispatcher("/WEB-INF/jsp_major/major.jsp")
                 .forward(req, resp);
     }

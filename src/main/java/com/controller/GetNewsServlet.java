@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.News;
 import com.entity.User;
 import com.util.DataSourceUtils;
@@ -54,7 +55,13 @@ public class GetNewsServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        req.setAttribute("news", news);
+        req.setAttribute("n", news);
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.getRequestDispatcher("/WEB-INF/jsp_news/news.jsp")
                 .forward(req, resp);
     }

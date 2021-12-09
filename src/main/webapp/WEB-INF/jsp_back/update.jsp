@@ -39,7 +39,7 @@
                     <div class="textbox-content">
                         <input name="nid" type="hidden" value="${news.nId}">
                         <li>昵称:
-                            <input name="author" type="text" id="yhm" placeholder = ${news.nAuthor}></li>
+                            <input name="author" type="text" id="yhm" disabled placeholder = ${news.nAuthor} ></li>
                         <li>标题:
                             <input name="label" type="text" id="label" placeholder = ${news.nLabel}></li>
 
@@ -49,7 +49,7 @@
                             <textarea name="content" cols="70" rows="20" placeholder = ${news.nContent}></textarea></li>
                     </div>
                     <div class="textbox-bottom">
-                        <input type="submit" name="regsubmit" value="提交" class="btn">
+                        <a><input type="submit" name="regsubmit" value="提交" class="btn"></a>
                     </div>
                 </div>
 

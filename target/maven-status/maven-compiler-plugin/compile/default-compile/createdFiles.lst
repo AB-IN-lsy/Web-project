@@ -9,6 +9,7 @@ com\util\DataSourceUtils.class
 com\controller\UpdateServlet.class
 com\controller\MajorServlet.class
 com\controller\GetMajorServlet.class
+com\dao\IndexDao.class
 com\entity\Laboratory.class
 com\controller\SaveServlet.class
 com\controller\NewsServlet.class

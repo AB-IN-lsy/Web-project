@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.dao.IndexDao;
 import com.entity.Laboratory;
 import com.entity.Teacher;
 import com.util.DataSourceUtils;
@@ -53,6 +54,12 @@ public class GetLabServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        IndexDao indexDao = new IndexDao();
+        req.setAttribute("article_laboratory", indexDao.getArticleLaboratories());
+        req.setAttribute("laboratories", indexDao.getLaboratories());
+        req.setAttribute("majors", indexDao.getMajors());
+        req.setAttribute("teachers", indexDao.getTeachers());
+        req.setAttribute("news", indexDao.getNews());
         req.setAttribute("lab", laboratory);
         req.getRequestDispatcher("/WEB-INF/jsp_lab/lab.jsp")
                 .forward(req, resp);

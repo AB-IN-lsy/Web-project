@@ -22,6 +22,7 @@
     写好了每个section的JavaScript: scroll() ps:因为偷懒所以没写第二界面 2021/11/23
     加入了数据库的更新 2021/11/24
     加入了从数据库中利用主码进行的查询，并打开详情页 2021/11/24
+    更改了横导航栏的所有属性，将所有二级属性全部加入进去了，并加入了链接，减少了冗余的链接 2021/12/5
 -->
 <nav>
     <div class="navBase">
@@ -117,7 +118,7 @@
             <ul>
                 <li class="PMenu"><a class="PAMenu" href="index" title="计科首页">计科首页</a></li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu0" title="学院指南">学院指南</a>
+                    <a class="PAMenu" href="https://aulin.nefu.edu.cn/" id="Nav_AMenu0" title="学院指南">学院指南</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -152,7 +153,7 @@
                     </div>
                 </li>
                 <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
-                    <a class="PAMenu" href="#" id="Nav_AMenu1" title="学校概况">学校概况</a>
+                    <a class="PAMenu" href="https://www.nefu.edu.cn/" id="Nav_AMenu1" title="学校概况">学校概况</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
@@ -364,6 +365,10 @@
                             </div>
                         </div>
                     </div>
+                </li>
+                <li class="PMenu">
+                    <img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <a class="PAMenu" href="lab" id="Nav_AMenu7" title="新闻动态">实验室览</a>
                 </li>
             </ul>
         </div>

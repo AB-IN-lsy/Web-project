@@ -12,7 +12,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>科研新闻</title>
+    <title>科研研究</title>
     <link rel="stylesheet" type="text/css" href="<%=path%>/css/index.css"/>
     <link
             rel="stylesheet"
@@ -24,7 +24,11 @@
             type="text/css"
             href="<%=path%>/css/index2.css"
     />
-
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="<%=path%>/css/index3.css"
+    />
     <script src="<%=path%>/js/jq.js" type="text/javascript"></script>
     <script src="<%=path%>/js/index.js" type="text/javascript"></script>
     <script src="<%=path%>/js/gif.js" type="text/javascript"></script>
@@ -38,11 +42,36 @@
     <div id="nav">
         <%@include file="/WEB-INF/jsp_labnews/nav.jsp" %>
     </div>
-    <ul>
-        <c:forEach items="${article_laboratory}" var="al" varStatus="i">
-            <li><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></li>
-        </c:forEach>
-    </ul>
+    <div id="content">
+        <section class="BaseMark PartBanner">
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a>>
+        科研研究</span></div>
+            <div class="title">
+                <p id="one">科研研究</p>
+                <hr/>
+            </div>
+            <ul>
+                <jsp:useBean id="article_laboratory" scope="request" type="java.util.List"/>
+                <c:forEach items="${article_laboratory}" var="al" varStatus="i">
+                    <li>
+                        <div class="textbox">
+                            <div class="textbox-title">
+
+                                <div class="textbox-label"><a href="getlabnews?alid=${al.alId }">
+                                    [标题：${al.alLabel} ]
+                                </a>
+                                    [发布日期:<fmt:formatDate
+                                            pattern="yyyy-MM-dd"
+                                            value="${al.insertTime}"/> ]
+                                </div>
+                            </div>
+                            <div class="textbox-content">${al.alContent }</div>
+                        </div>
+                    </li>
+                </c:forEach>
+            </ul>
+        </section>
+    </div>
     <div id="footer">
         <%@include file="/WEB-INF/jsp/footer.jsp" %>
     </div>
