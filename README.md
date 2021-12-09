@@ -24,6 +24,8 @@
 
   ![img2](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img2.png)
 
+  ![img4](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img4.png)
+
 * ### <font color=#000000 size=4 face=粗体>项目日志</font>
 
   * 2021.11.14 
