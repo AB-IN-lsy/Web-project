@@ -24,5 +24,6 @@ D:\Code\Web\web-workplace\test\src\main\java\com\controller\GetLabServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\filter\EncodingFilter.java
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\Teacher.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\DeleteServlet.java
+D:\Code\Web\web-workplace\test\src\main\java\com\controller\SearchTypeServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\LabNewsServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\SaveServlet.java

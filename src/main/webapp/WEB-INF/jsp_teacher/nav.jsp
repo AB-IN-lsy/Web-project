@@ -30,20 +30,20 @@
             <div class="quickMenus" >
                 <ul class="firstUl">
                     <li class="first">
-                        <a class="firstA" href="#" target="_self">
+                        <a class="firstA" href="javascript:" target="_self">
                             <em>专业咨询</em><i class="style01"></i><span></span></a>
                         <div class="QMSub QMSubMenus">
                             <ul>
-                                <li><a href="#" title="">本科生教育</a></li>
-                                <li><a href="#" title="">研究生教育</a></li>
-                                <li><a href="#" title="">国际学生教育</a></li>
-                                <li><a href="#" title="">学生职业发展</a></li>
-                                <li><a href="#" title="">继续教育</a></li>
+                                <li><a href="javascript:" title="">本科生教育</a></li>
+                                <li><a href="javascript:" title="">研究生教育</a></li>
+                                <li><a href="javascript:" title="">国际学生教育</a></li>
+                                <li><a href="javascript:" title="">学生职业发展</a></li>
+                                <li><a href="javascript:" title="">继续教育</a></li>
                             </ul>
                             <div class="clear"></div>
                         </div>
                     </li>
-                    <li class="first"><a class="firstA" href="#"><em>杰出校友</em><i class="style04"></i><span></span></a>
+                    <li class="first"><a class="firstA" href="javascript:"><em>杰出校友</em><i class="style04"></i><span></span></a>
                         <div class="QMSub QMSubList">
                             <div class="IndexWords">
                                 <h5>按姓名首字母查找</h5>
@@ -81,12 +81,12 @@
                         </div>
                     </li>
                     <li class="first">
-                        <a class="firstA" href="#" target="_self"><em>人才招聘</em><i class="style02"></i><span></span></a>
+                        <a class="firstA" href="javascript:" target="_self"><em>人才招聘</em><i class="style02"></i><span></span></a>
                         <div class="QMSub QMSubMenus">
                             <ul>
-                                <li><a href="#">招聘计划</a></li>
-                                <li><a href="#">招聘信息</a></li>
-                                <li><a href="#">我要应聘</a></li>
+                                <li><a href="javascript:">招聘计划</a></li>
+                                <li><a href="javascript:">招聘信息</a></li>
+                                <li><a href="javascript:">我要应聘</a></li>
                             </ul>
                             <div class="clear"></div>
                         </div>
@@ -115,7 +115,7 @@
         <div class="nav Inav">
             <ul>
                 <li class="PMenu"><a class="PAMenu" href="index" title="计科首页">计科首页</a></li>
-                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="https://aulin.nefu.edu.cn/" id="Nav_AMenu0" title="学院指南">学院指南</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -124,7 +124,7 @@
                                     <div class="BottomHidden"></div>
                                     <dl>
                                         <dt>奥林学院</dt>
-                                        <dd class="pic"><img height="77" src="resources/images/aulin.png" width="126">
+                                        <dd class="pic"><img height="77" src="https://oss.ab-in.cn/images/aulin.png" width="126">
                                         </dd>
                                         <dd class="text"><p>东北林业大学奥林学院作为一个非独立法人的中外合作办学机构，于2019 年 4 月 15
                                             日获教育部批准，同意设立。奥林学院隶属于东北林业大学（简称“东林”），是兼具有中外合作办学性质的一个教学、科研单位，办学地点设在东林校区。</p>
@@ -143,33 +143,33 @@
                                         <dd><em>地铁路线</em>
                                             <p>1, 2号线</p></dd>
                                     </dl>
-                                    <a href="#">电子地图</a>
+                                    <a href="javascript:">电子地图</a>
                                 </div>
                                 <div class="clear"></div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="https://www.nefu.edu.cn/" id="Nav_AMenu1" title="学校概况">学校概况</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
                             <div class="navbox BaseMark">
                                 <div class="navMenus">
                                     <ul>
-                                        <li class="first"><a href="#" title="">校长致辞<span>进入</span></a></li>
-                                        <li><a href="#" title="">学校沿革<span>进入</span></a></li>
-                                        <li><a href="#" title="">历任领导<span>进入</span></a></li>
-                                        <li><a href="#" title="">现任领导<span>进入</span></a></li>
-                                        <li><a href="#" title="">组织机构<span>进入</span></a></li>
-                                        <li><a href="#" title="">统计资料<span>进入</span></a></li>
+                                        <li class="first"><a href="javascript:" title="">校长致辞<span>进入</span></a></li>
+                                        <li><a href="javascript:" title="">学校沿革<span>进入</span></a></li>
+                                        <li><a href="javascript:" title="">历任领导<span>进入</span></a></li>
+                                        <li><a href="javascript:" title="">现任领导<span>进入</span></a></li>
+                                        <li><a href="javascript:" title="">组织机构<span>进入</span></a></li>
+                                        <li><a href="javascript:" title="">统计资料<span>进入</span></a></li>
                                     </ul>
                                 </div>
-                                <div class="navSub6"><img height="92" src="resources/images/aulin.png" width="92"/>
+                                <div class="navSub6"><img height="92" src="https://oss.ab-in.cn/images/aulin.png" width="92"/>
                                     <ul>
                                         <li><span>2019年</span><em>正式成立</em></li>
                                     </ul>
-                                    <a class="Amore" href="#">了解详情</a>
+                                    <a class="Amore" href="javascript:">了解详情</a>
                                 </div>
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
@@ -189,7 +189,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="labnews" id="Nav_AMenu2" title="科学研究">科学研究</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -203,7 +203,7 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>科学论坛</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg"
+                                        <dd class="pic"><img alt="" height="48" src="https://oss.ab-in.cn/images/ico_049.jpg"
                                                              width="48"/>
                                             <c:forEach items="${article_laboratory}" var="al" varStatus="i">
                                         <dd><em><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></em></dd>
@@ -217,7 +217,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>实验室</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg"
+                                        <dd class="pic"><img alt="" height="48" src="https://oss.ab-in.cn/images/ico_048.jpg"
                                                              width="48"/>
                                             <c:forEach items="${laboratories}" var="l" varStatus="i">
                                         <dd><em><a class="animated" href="getlab?lid=${l.lId}">${l.lName}</a></em>
@@ -232,7 +232,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="major" id="Nav_AMenu3" title="教育教学">教育教学</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -240,17 +240,17 @@
                                 <div class="navMenus">
                                     <ul>
                                         <li class="first"><a href="major">专业预览</a></li>
-                                        <li><a href="#">研究生教育</a></li>
-                                        <li><a href="#">本科生教育</a></li>
-                                        <li><a href="#">留学生教育</a></li>
-                                        <li><a href="#">继续教育</a></li>
-                                        <li><a href="#">海外学习</a></li>
+                                        <li><a href="javascript:">研究生教育</a></li>
+                                        <li><a href="javascript:">本科生教育</a></li>
+                                        <li><a href="javascript:">留学生教育</a></li>
+                                        <li><a href="javascript:">继续教育</a></li>
+                                        <li><a href="javascript:">海外学习</a></li>
                                     </ul>
                                 </div>
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>专业预览</dt>
-                                        <dd class="pic"><img alt="专业预览" height="48" src="resources/images/ico_046.jpg"
+                                        <dd class="pic"><img alt="专业预览" height="48" src="https://oss.ab-in.cn/images/ico_046.jpg"
                                                              width="48"/></dd>
                                         <c:forEach items="${majors}" var="m" varStatus="i">
                                             <c:if test="${i.count <= 5}">
@@ -265,9 +265,9 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>教育帮扶</dt>
-                                        <dd class="pic"><img alt="本科生教育" height="48" src="resources/images/ico_048.jpg"
+                                        <dd class="pic"><img alt="本科生教育" height="48" src="https://oss.ab-in.cn/images/ico_048.jpg"
                                                              width="48"/></dd>
-                                        <dd><em>2019年</em><a href="#" title="”">开启互帮互助活动，努力做到共同学习，共同进步</a></dd>
+                                        <dd><em>2019年</em><a href="javascript:" title="”">开启互帮互助活动，努力做到共同学习，共同进步</a></dd>
                                     </dl>
                                     <div class="BottomHidden"></div>
                                 </div>
@@ -276,7 +276,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu current"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                <li class="PMenu current"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="teacher" id="Nav_AMenu4" title="学校团队">学校团队</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -284,13 +284,13 @@
                                 <div class="navMenus">
                                     <ul>
                                         <li class="first"><a href="teacher" title="杰出教师">杰出教师</a></li>
-                                        <li class="first"><a href="#" title="杰出人才">杰出人才</a></li>
+                                        <li class="first"><a href="javascript:" title="杰出人才">杰出人才</a></li>
                                     </ul>
                                 </div>
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>杰出教师</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_049.jpg"
+                                        <dd class="pic"><img alt="" height="48" src="https://oss.ab-in.cn/images/ico_049.jpg"
                                                              width="48"/>
                                             <c:forEach items="${teachers}" var="t" varStatus="i">
                                             <c:if test="${i.count <= 4}">
@@ -306,7 +306,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>杰出人才</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_050.jpg"
+                                        <dd class="pic"><img alt="" height="48" src="https://oss.ab-in.cn/images/ico_050.jpg"
                                                              width="48"/>
                                         </dd>
                                         <dd><em><a href="https://www.ab-in.cn">刘思远</a></em></dd>
@@ -318,7 +318,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="PMenu"><img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                <li class="PMenu"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="news" id="Nav_AMenu5" title="新闻动态">新闻动态</a>
                     <div class="navboxBase">
                         <div class="navboxBg">
@@ -332,7 +332,7 @@
                                 <div class="navSub2 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>头条新闻</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_046.jpg"
+                                        <dd class="pic"><img alt="" height="48" src="https://oss.ab-in.cn/images/ico_046.jpg"
                                                              width="48"/>
                                         </dd>
                                         <c:forEach items="${news}" var="n" varStatus="i">
@@ -347,7 +347,7 @@
                                 <div class="navSub3 nav_Menu02 autoPic">
                                     <dl>
                                         <dt>科研新闻</dt>
-                                        <dd class="pic"><img alt="" height="48" src="resources/images/ico_048.jpg"
+                                        <dd class="pic"><img alt="" height="48" src="https://oss.ab-in.cn/images/ico_048.jpg"
                                                              width="48"/>
                                         </dd>
                                         <c:forEach items="${article_laboratory}" var="al" varStatus="i">
@@ -365,7 +365,7 @@
                     </div>
                 </li>
                 <li class="PMenu">
-                    <img class="animated" height="8" src="resources/images/ico_014.png" width="15"/>
+                    <img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="lab" id="Nav_AMenu7" title="新闻动态">实验室览</a>
                 </li>
             </ul>

@@ -37,14 +37,14 @@
 <body>
 <div class="container">
     <div id="header">
-        <%@include file="/WEB-INF/jsp_major/header.jsp" %>
+        <%@include file="/WEB-INF/jsp/header.jsp" %>
     </div>
     <div id="nav">
         <%@include file="/WEB-INF/jsp_major/nav.jsp" %>
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a>>
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
         教育教学</span></div>
             <div class="title">
                 <p id="one">教育教学</p>
@@ -73,6 +73,9 @@
                 </c:forEach>
             </ul>
         </section>
+    </div>
+    <div id="QR">
+        <%@include file="/WEB-INF/jsp/QR.jsp" %>
     </div>
     <div id="footer">
         <%@include file="/WEB-INF/jsp/footer.jsp" %>

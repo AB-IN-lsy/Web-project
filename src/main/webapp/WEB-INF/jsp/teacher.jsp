@@ -40,7 +40,7 @@
             <c:forEach items="${teachers}" var="t" varStatus="i">
                 <li><a class="img" href="getteacher?tid=${t.tId}" target="_blank" title="${t.tName}"><img
                         alt="${t.tName}" height="162"
-                        src="resources/images/${t.tPic}"
+                        src="https://oss.ab-in.cn/images/${t.tPic}"
                         title="${t.tName}"
                         width="120"/></a>
                     <a class="name" href="getteacher?tid=${t.tId}" target="_blank" title="${t.tName}">${t.tName}</a>

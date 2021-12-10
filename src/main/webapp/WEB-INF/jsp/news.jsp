@@ -30,7 +30,7 @@
                 alt=""
                 class="load"
                 height="52"
-                src="resources/images/ico_003.gif"
+                src="https://oss.ab-in.cn/images/ico_003.gif"
                 width="52"
         />
             <em>专业医护平台</em></a
@@ -38,7 +38,7 @@
         <img
                 class="load"
                 height="52"
-                src="resources/images/ico_004.gif"
+                src="https://oss.ab-in.cn/images/ico_004.gif"
                 width="52"
         />
         <em>专业查询平台</em></a
@@ -47,7 +47,7 @@
             <img
                     class="load"
                     height="52"
-                    src="resources/images/ico_001.gif"
+                    src="https://oss.ab-in.cn/images/ico_001.gif"
                     width="52"
             />
             <em>专业智慧平台</em></a
@@ -55,7 +55,7 @@
         <a><img
                 class="load"
                 height="52"
-                src="resources/images/ico_002.gif"
+                src="https://oss.ab-in.cn/images/ico_002.gif"
                 width="52"
         />
             <em>专业数据平台</em>
@@ -74,7 +74,7 @@
                         ><img
                                 class="load"
                                 height="76"
-                                src="resources/images/pic1.jpg"
+                                src="https://oss.ab-in.cn/images/pic1.jpg"
                                 width="126"
                         /></a>
                         <div>
@@ -113,7 +113,7 @@
                             <img
                                     class="load"
                                     height="76"
-                                    src="resources/images/pic4.png"
+                                    src="https://oss.ab-in.cn/images/pic4.png"
                                     width="126"
                             /></a>
                         <div><a href="getlabnews?alid=${al.alId }">${al.alLabel}</a></div>

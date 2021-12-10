@@ -32,23 +32,26 @@
 <body>
 <div class="container">
     <div id="header">
-        <%@include file="/WEB-INF/jsp_major/header.jsp" %>
+        <%@include file="/WEB-INF/jsp/header.jsp" %>
     </div>
     <div id="nav">
         <%@include file="/WEB-INF/jsp_major/nav.jsp" %>
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a>>
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
                 <a href="major">教育教学</a> > ${major.mName }</span></div>
             <div class="title">
                 <p id="two">${major.mName }</p>
                 <hr/>
             </div>
             <div class="title03">
-                <span>发布日期:<fmt:formatDate
+                <span>开设日期:<fmt:formatDate
                         pattern="yyyy-MM-dd"
                         value="${major.insertTime}"/> </span>
+                <span>更新日期:<fmt:formatDate
+                        pattern="yyyy-MM-dd"
+                        value="${major.updateTime}"/> </span>
                 &nbsp;&nbsp;&nbsp;
             </div>
             <div class="content01">

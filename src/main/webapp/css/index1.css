@@ -18,6 +18,34 @@
 2. media 响应式布局
 3. 挂件的配置（addition part）目前还处于不太成熟状态，因不能滑动上去，比较生硬
 */
+
+.flex{
+    display: flex;
+}
+
+.header-logo {
+    background-image: url("https://oss.ab-in.cn/images/nefu-logo.svg");
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+}
+
+.header-name {
+    background-image: url("https://oss.ab-in.cn/images/nefu-name.svg");
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.full-box-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 nav .Inav {
     width: 938px;
 }
@@ -243,7 +271,7 @@ nav .Inav {
 }
 
 .NewsBase .notice01 .title {
-    background: url(../resources/images/ico_025.jpg) left top no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_025.jpg) left top no-repeat;
     position: relative;
     height: 64px;
 }
@@ -262,7 +290,7 @@ nav .Inav {
 }
 
 .NewsBase .notice02 .title {
-    background: url(../resources/images/ico_026.jpg) left top no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_026.jpg) left top no-repeat;
     position: relative;
     height: 64px;
 }
@@ -377,7 +405,7 @@ nav .Inav {
     padding-top: 3px;
     padding-left: 52px;
     border-bottom: 5px solid #00785a;
-    background: url(../resources/images/ico_028.jpg) 7px top no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_028.jpg) 7px top no-repeat;
 }
 
 .doctorsBase .tools, .officesBase .tools {
@@ -425,7 +453,7 @@ nav .Inav {
 }
 
 .doctorsBase .tools .search .btn {
-    background: url(../resources/images/ico_030.jpg) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_030.jpg) center center no-repeat;
     height: 33px;
     width: 20px;
     border: none;
@@ -447,11 +475,11 @@ nav .Inav {
     height: 26px;
     display: block;
     border: 2px solid #ddd;
-    background: #FFF url(../resources/images/ico_031b.png) center center no-repeat;
+    background: #FFF url(https://oss.ab-in.cn/images/ico_031b.png) center center no-repeat;
 }
 
 .doctorsBase .tools .Aprev:hover, .officesBase .tools .Aprev:hover {
-    background: #ff7544 url(../resources/images/ico_031a.png) center center no-repeat;
+    background: #ff7544 url(https://oss.ab-in.cn/images/ico_031a.png) center center no-repeat;
 }
 
 .doctorsBase .tools .Anext, .officesBase .tools .Anext {
@@ -462,11 +490,11 @@ nav .Inav {
     height: 26px;
     display: block;
     border: 2px solid #ddd;
-    background: #FFF url(../resources/images/ico_032b.png) center center no-repeat;
+    background: #FFF url(https://oss.ab-in.cn/images/ico_032b.png) center center no-repeat;
 }
 
 .doctorsBase .tools .Anext:hover, .officesBase .tools .Anext:hover {
-    background: #ff7544 url(../resources/images/ico_032a.png) center center no-repeat;
+    background: #ff7544 url(https://oss.ab-in.cn/images/ico_032a.png) center center no-repeat;
 }
 
 .doctorsBase .tools .Amore, .officesBase .tools .Amore {
@@ -747,7 +775,7 @@ nav .Inav {
 .doctorsBase .DFastSearch .DList .DName .name {
     font-size: 16px;
     color: #978571;
-    background: url(../resources/images/ico_013.png) 1px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_013.png) 1px center no-repeat;
     display: block;
 }
 
@@ -760,7 +788,7 @@ nav .Inav {
 .doctorsBase .DFastSearch .DList .DName:hover .name {
     text-indent: 19px;
     color: #ff7544;
-    background: url(../resources/images/ico_004.png) 1px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_004.png) 1px center no-repeat;
 }
 
 .doctorsBase .DFastSearch .DList .DName div {
@@ -850,7 +878,7 @@ nav .Inav {
 }
 
 .officesBase .title {
-    background: url(../resources/images/ico_029.jpg) 7px top no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_029.jpg) 7px top no-repeat;
 }
 
 .officesBase .tools {
@@ -913,7 +941,7 @@ nav .Inav {
     line-height: 30px;
     left: 50px;
     color: #ff7544;
-    background: url(../resources/images/ico_034.jpg) no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_034.jpg) no-repeat;
     background-position: 71px center;
 }
 
@@ -927,7 +955,7 @@ nav .Inav {
     line-height: 30px;
     right: 50px;
     color: #0088a8;
-    background: url(../resources/images/ico_035.jpg) no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_035.jpg) no-repeat;
     background-position: 71px center;
 }
 
@@ -993,7 +1021,7 @@ nav .Inav {
     font-size: 16px;
     line-height: 16px;
     color: #6bcbca;
-    background: url(../resources/images/ico_004.png) left 1px no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_004.png) left 1px no-repeat;
     margin-bottom: 24px;
 }
 
@@ -1184,7 +1212,7 @@ nav .Inav {
     height: 15px;
     line-height: 17px;
     color: #a8a8a8;
-    background: url(../resources/images/ico_040a.png) right center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_040a.png) right center no-repeat;
 }
 
 .othersBase .right a:hover {
@@ -1208,7 +1236,7 @@ nav .Inav {
 
 .othersBase .right a:hover b {
     color: #fff;
-    background: url(../resources/images/ico_040b.png) right center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_040b.png) right center no-repeat;
 }
 
 @media all and (min-width: 1px) and (max-width: 1279px) {
@@ -1485,7 +1513,7 @@ nav .Inav {
     -webkit-animation: dh_ffdb 2s steps(24) infinite;
     -o-animation: dh_ffdb 2s steps(24) infinite;
     animation: dh_ffdb 2s steps(24) infinite;
-    background: url(../resources/images/mj.png) no-repeat;
+    background: url(https://oss.ab-in.cn/images/mj.png) no-repeat;
     width: 54px;
     height: 300px;
     transition: 1s;

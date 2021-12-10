@@ -28,21 +28,21 @@
                 <li>
                     <img
                             height="185"
-                            src="resources/images/pic1.jpg"
+                            src="https://oss.ab-in.cn/images/pic1.jpg"
                             width="290"
                     />
                 </li>
                 <li>
                     <img
                             height="185"
-                            src="resources/images/pic2.jpg"
+                            src="https://oss.ab-in.cn/images/pic2.jpg"
                             width="290"
                     />
                 </li>
                 <li>
                     <img
                             height="185"
-                            src="resources/images/pic3.jpg"
+                            src="https://oss.ab-in.cn/images/pic3.jpg"
                             width="290"
                     />
                 </li>
@@ -69,13 +69,13 @@
             <a href="getlab?lid=${l.lId}" title="">
                 <img
                         height="32"
-                        src="resources/images/${l.lPic}a.png"
+                        src="https://oss.ab-in.cn/images/${l.lPic}a.png"
                         width="32"
                 />
                 <img
                         class="second animated"
                         height="32"
-                        src="resources/images/${l.lPic}b.png"
+                        src="https://oss.ab-in.cn/images/${l.lPic}b.png"
                         width="32"
                 />
                 <em class="animated">${l.lName}</em>

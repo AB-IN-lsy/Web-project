@@ -32,15 +32,16 @@
 <body>
 <div class="container">
     <div id="header">
-        <%@include file="/WEB-INF/jsp_lab/header.jsp" %>
+        <%@include file="/WEB-INF/jsp/header.jsp" %>
     </div>
     <div id="nav">
         <%@include file="/WEB-INF/jsp_lab/nav.jsp" %>
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a>>
-                <a href="lab">实验室览</a> > ${lab.lName }</span></div>
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
+                <a href="lab">实验室览</a> > ${lab.lName }</span>
+            </div>
             <div class="title">
                 <p id="two">${lab.lName }</p>
                 <hr/>

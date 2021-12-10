@@ -15,7 +15,7 @@
 
         <div id="header">
 
-            <div id="logo"><img src="resources/images/logo.gif"/></div>
+            <div id="logo"><img src="https://oss.ab-in.cn/images/logo.gif"/></div>
             <div id="blog-header">
                 <h1 class="blog-title"><a href="findall">后端文章编辑器</a></h1>
                 <div class="blog-desc">Welcome</div>

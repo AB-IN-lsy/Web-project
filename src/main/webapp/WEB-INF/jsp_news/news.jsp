@@ -33,14 +33,14 @@
 <body>
 <div class="container">
     <div id="header">
-        <%@include file="/WEB-INF/jsp_news/header.jsp" %>
+        <%@include file="/WEB-INF/jsp/header.jsp" %>
     </div>
     <div id="nav">
         <%@include file="/WEB-INF/jsp_news/nav.jsp" %>
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a>>
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
                 <a href="news">新闻动态</a> > ${n.nLabel }</span></div>
             <div class="title">
                 <p id="two">${n.nLabel }</p>

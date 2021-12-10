@@ -25,23 +25,23 @@
     <div class="Banners">
         <ul class="AnimUl">
             <li>
-                <a href="#" title=""
-                ><img alt="" src="resources/images/pic1.jpg"
+                <a href="javascript:" title=""
+                ><img alt="" src="https://oss.ab-in.cn/images/pic1.jpg"
                 /></a>
             </li>
             <li>
-                <a href="#" title=""
-                ><img alt="" src="resources/images/pic2.jpg"
+                <a href="javascript:" title=""
+                ><img alt="" src="https://oss.ab-in.cn/images/pic2.jpg"
                 /></a>
             </li>
             <li>
-                <a href="#" title=""
-                ><img alt="" src="resources/images/pic3.jpg"
+                <a href="javascript:" title=""
+                ><img alt="" src="https://oss.ab-in.cn/images/pic3.jpg"
                 /></a>
             </li>
             <li>
-                <a href="#" title=""
-                ><img alt="" src="resources/images/pic4.png"
+                <a href="javascript:" title=""
+                ><img alt="" src="https://oss.ab-in.cn/images/pic4.png"
                 /></a>
             </li>
         </ul>

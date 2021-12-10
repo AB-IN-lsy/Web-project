@@ -45,7 +45,7 @@
                         <a href="getmajor?mid=${m.mId}" target="_blank" title="${m.mName}"><img
                                 alt="${m.mName}"
                                 height="80"
-                                src="resources/images/${m.mPic}"
+                                src="https://oss.ab-in.cn/images/${m.mPic}"
                                 width="80"
                         /></a>
                     </div>

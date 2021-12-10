@@ -29,7 +29,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -38,7 +38,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -47,7 +47,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -56,7 +56,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -65,7 +65,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -74,7 +74,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -83,7 +83,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -92,7 +92,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -101,7 +101,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>
@@ -110,7 +110,7 @@
                         <div>
                             <img
                                     height="75"
-                                    src="resources/images/QRcode.jpg"
+                                    src="https://oss.ab-in.cn/images/QRcode.jpg"
                                     width="75"
                             />
                         </div>

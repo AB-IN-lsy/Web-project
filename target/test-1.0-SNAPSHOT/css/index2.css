@@ -362,7 +362,7 @@ header .BaseMark {
 
 header .BaseMark ul li {
     float: left;
-    background: url(../resources/images/ico_vline.jpg) left center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_vline.jpg) left center no-repeat;
     padding: 0px 8px;
 }
 
@@ -378,7 +378,7 @@ header .loginIn {
     position: absolute;
     right: 92px;
     top: 0px;
-    background: url(../resources/images/ico_vline.jpg) right center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_vline.jpg) right center no-repeat;
 }
 header .loginUp {
     width: 57px;
@@ -387,7 +387,7 @@ header .loginUp {
     position: absolute;
     right: 142px;
     top: 0px;
-    background: url(../resources/images/ico_vline.jpg) right center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_vline.jpg) right center no-repeat;
 }
 
 header .langBtn {
@@ -402,7 +402,7 @@ header .langBtn {
 }
 
 header .langBtn .flag {
-    background: url(../resources/images/ico_002.jpg) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_002.jpg) center center no-repeat;
     display: block;
     width: 20px;
     height: 13px;
@@ -412,7 +412,7 @@ header .langBtn .flag {
 }
 
 header .langBtn .downBtn {
-    background: url(../resources/images/ico_005.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_005.png) center center no-repeat;
     display: block;
     width: 11px;
     height: 7px;
@@ -558,7 +558,7 @@ header .searchBase .boxsub {
 }
 
 header .divType {
-    background: url(../resources/images/ico_005.jpg) 84px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_005.jpg) 84px center no-repeat;
     text-indent: 20px;
     cursor: pointer;
 }
@@ -596,7 +596,7 @@ nav .quickMenu01 {
 }
 
 nav .quickMenu02 {
-    background: #6bcbca url(../resources/images/ico_013.png) no-repeat 15px center;
+    background: #6bcbca url(https://oss.ab-in.cn/images/ico_013.png) no-repeat 15px center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -656,7 +656,7 @@ nav li.first .QMSubMenus ul {
 nav li.first .QMSubMenus li {
     width: 222px;
     height: 74px;
-    background: url(../resources/images/ico_004.png) 18px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_004.png) 18px center no-repeat;
     font-size: 14px;
 }
 
@@ -720,7 +720,7 @@ nav li.first .QMSubList .item {
 }
 
 nav li.first .QMSubList .item h5 {
-    background: url(../resources/images/ico_004.png) 0px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_004.png) 0px center no-repeat;
     font-size: 14px;
     line-height: 38px;
     color: #ff7544;
@@ -732,7 +732,7 @@ nav li.first .QMSubList .item a {
     color: #666;
     padding: 0px 6px;
     float: left;
-    background: url(../resources/images/ico_vline.jpg) left center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_vline.jpg) left center no-repeat;
 }
 
 nav li.first .QMSubList .item a.first {
@@ -812,7 +812,7 @@ nav li.first .QMSubList .DList .DName .name {
     font-size: 16px;
     text-indent: 19px;
     color: #978571;
-    background: url(../resources/images/ico_004.png) left center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_004.png) left center no-repeat;
     display: block;
 }
 
@@ -853,7 +853,7 @@ nav .quickMenus .firstA {
     text-indent: 58px;
     font-size: 14px;
     color: #333;
-    background: url(../resources/images/ico_016a.png) right center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_016a.png) right center no-repeat;
 }
 
 nav .quickMenus .firstA em {
@@ -891,40 +891,40 @@ nav .quickMenus .firstA span {
 }
 
 nav .quickMenus .firstA i.style01 {
-    background: url(../resources/images/ico_017.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_017.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style02 {
-    background: url(../resources/images/ico_056.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_056.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style03 {
-    background: url(../resources/images/logo1.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/logo1.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style04 {
-    background: url(../resources/images/ico_020.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_020.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style05 {
-    background: url(../resources/images/logo1.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/logo1.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style06 {
-    background: url(../resources/images/logo1.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/logo1.png) center center no-repeat;
 }
 
 nav .quickMenus .firstA i.style07 {
-    background: url(../resources/images/ico_60.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_60.png) center center no-repeat;
 }
 nav .quickMenus .firstA i.style08 {
-    background: url(../resources/images/ico_057.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_057.png) center center no-repeat;
 }
 nav .quickMenus .firstA i.style09 {
-    background: url(../resources/images/ico_059.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_059.png) center center no-repeat;
 }
 nav .quickMenus .firstA i.style10 {
-    background: url(../resources/images/ico_60.png) center center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_60.png) center center no-repeat;
 }
 
 nav .quickMenus .first.last em {
@@ -932,7 +932,7 @@ nav .quickMenus .first.last em {
 }
 
 nav .quickMenus li.first:hover .firstA {
-    background: #00785a url(../resources/images/ico_016b.png) right center no-repeat;
+    background: #00785a url(https://oss.ab-in.cn/images/ico_016b.png) right center no-repeat;
     text-indent: 68px;
     color: #FFF;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
@@ -1117,7 +1117,7 @@ nav .nav .PMenu:hover img.animated, nav .nav .PMenu.current img.animated {
 }
 
 .navSub6 ul li {
-    background: url(../resources/images/ico_044.jpg) left center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_044.jpg) left center no-repeat;
     padding-left: 19px;
 }
 
@@ -1157,7 +1157,7 @@ nav .nav .PMenu:hover img.animated, nav .nav .PMenu.current img.animated {
     height: 67px;
     position: relative;
     border-top: 1px solid #CCC;
-    background: url(../resources/images/ico_045.jpg) left 22px no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_045.jpg) left 22px no-repeat;
     padding-top: 22px;
 }
 
@@ -1205,7 +1205,7 @@ nav .nav .PMenu:hover img.animated, nav .nav .PMenu.current img.animated {
     overflow: hidden;
     line-height: 51px;
     border-top: #f5f4f4 1px solid;
-    background: url(../resources/images/ico_004.png) 18px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_004.png) 18px center no-repeat;
     font-size: 14px;
 }
 
@@ -1435,7 +1435,7 @@ nav .nav .PMenu:hover img.animated, nav .nav .PMenu.current img.animated {
     padding-left: 35px;
     padding-bottom: 6px;
     font-size: 14px;
-    background: url(../resources/images/ico_015.png) left center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_015.png) left center no-repeat;
 }
 
 .nav_Route dl dd {
@@ -1718,7 +1718,7 @@ footer select {
     border-radius: 4px;
     font-size: 12px;
     font-family: Arial, Tahoma, "Microsoft YaHei", "SimSun";
-    background: #fff url(../resources/images/ico_005.png) 78px center no-repeat;
+    background: #fff url(https://oss.ab-in.cn/images/ico_005.png) 78px center no-repeat;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -1743,12 +1743,12 @@ footer .DWeibo a {
 }
 
 footer .DWeibo .weibo {
-    background: url(../resources/images/ico_011.png) 7px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_011.png) 7px center no-repeat;
     background-color: #cacaca;
 }
 
 footer .DWeibo .tencent {
-    background: url(../resources/images/ico_012.png) 8px center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_012.png) 8px center no-repeat;
     background-color: #a3c638;
 }
 
@@ -1779,7 +1779,7 @@ footer .websiteInfo ul li.first {
 
 footer .websiteInfo ul li {
     float: left;
-    background: url(../resources/images/ico_vline.jpg) left center no-repeat;
+    background: url(https://oss.ab-in.cn/images/ico_vline.jpg) left center no-repeat;
     padding: 0px 6px;
 }
 
@@ -1811,7 +1811,7 @@ footer .websiteInfo p a span {
     margin: 25px auto 72px auto;
     display: block;
     border-radius: 0px;
-    background: #fff url(../resources/images/ico_013.jpg) 196px center no-repeat;
+    background: #fff url(https://oss.ab-in.cn/images/ico_013.jpg) 196px center no-repeat;
     color: #757575;
 }
 

@@ -39,18 +39,25 @@
             </ul>
         </div>
     </div>
-    <div class="BaseMark logoBase">
-        <a href="index"><img class="load" height="104" src="resources/images/logo.png" width="151"/></a>
+    <div class="BaseMark logoBase flex">
+        <div class="header-logo" title="东北林业大学计算机科学与技术专业">
+            <a href="index" class="full-box-link"></a>
+        </div>
+        <div class="header-name" title="东北林业大学计算机科学与技术专业">
+            <a href="index" class="full-box-link"></a>
+        </div>
         <div class="searchBase">
-            <div class="itemBase">
-                <div class="divType">校内搜索</div>
-                <ul>
-                    <li data-id="1">校内搜索</li>
-                    <li data-id="2">名师校友</li>
-                    <li data-id="3">新闻动态</li>
-                </ul>
-            </div>
-            <form action="#" method="get">
+            <form action="searchType" method="post">
+                <div class="itemBase">
+                    <div class="divType">科学研究</div>
+                    <ul>
+                        <li data-id="1">科学研究</li>
+                        <li data-id="2">教育教学</li>
+                        <li data-id="3">学校团队</li>
+                        <li data-id="4">新闻动态</li>
+                        <li data-id="5">实验室览</li>
+                    </ul>
+                </div>
                 <input id="Type" name="Type" type="hidden" value="1"/>
                 <input id="SearchWords" maxlength="28" name="SearchWords" placeholder="请输入您要查找内容的关键字" type="text"
                        value=""/>

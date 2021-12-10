@@ -103,9 +103,7 @@ select {
 
 #header {
     height: 82px;
-    background: url(../resources/images/header-bg.png) 0 top;
-    background-position: 0px;
-    background-repeat: no-repeat;
+    background: url(https://oss.ab-in.cn/images/header-bg.png) no-repeat 0px;
 }
 
 #footer {
@@ -127,7 +125,7 @@ select {
 #logo {
     width: 64px;
     height: 64px;
-    background: url(../resources/images/logo.gif) no-repeat;
+    background: url(https://oss.ab-in.cn/images/logo.gif) no-repeat;
     float: left;
     margin-top: 5px;
 }

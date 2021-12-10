@@ -12,6 +12,10 @@
     margin: 40px 10px 10px 10px;
 }
 
+.bread span a:hover{
+    border-bottom: 1px solid black;
+    color: #29596f;
+}
 
 #one {
     color: #29596f;
