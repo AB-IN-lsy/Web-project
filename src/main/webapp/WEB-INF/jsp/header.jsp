@@ -34,7 +34,7 @@
                 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a class="loginIn" href="login" target="_self">登陆后台</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<%--                <a class="loginUp" href="注册.html" target="_self">注册</a>--%>
+                <a class="loginUp" href="https://github.com/AB-IN-lsy/Web-project/blob/master/README.md" target="_blank">开发日志</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </ul>
         </div>

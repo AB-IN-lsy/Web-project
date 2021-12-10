@@ -23,7 +23,7 @@
     <tr>
         <td bgcolor="#FFFFFF">
             <form name="form1" method="post" action="#">
-                <table width="100%" border="0" align="center">
+                <table width="100%" border="0" align="center" id="table1">
                     <tr>
                         <td colspan="2" align="center">
                             <b>帐户:</b>
@@ -40,6 +40,7 @@
                         <td align="center">
                             <input class="animated" type="submit" name="Submit" value="登陆"> &nbsp;&nbsp;&nbsp;
                             <input class="animated" type="reset" name="Submit2" value="取消">
+                            <a href="index" id="back">返回</a>
                         </td>
                     </tr>
                 </table>

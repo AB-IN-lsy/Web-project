@@ -11,6 +11,9 @@ body {
 #title{
     background: #0066ff;
 }
+#table1{
+    position: relative;
+}
 input[type="submit"], input[type="reset"]{
     background: #0066ff;
     border: none;
@@ -20,6 +23,10 @@ input[type="submit"], input[type="reset"]{
 
 input[type="submit"]:hover, input[type="reset"]:hover{
     background: #66ACF3;
+}
+#back{
+    position: absolute;
+    left: 90%;
 }
 
 a {
