@@ -9,24 +9,25 @@ body {
     padding: 0px;
 }
 #title{
-    background: #0066ff;
+    background: #0089eb;
 }
 #table1{
     position: relative;
 }
-input[type="submit"], input[type="reset"]{
-    background: #0066ff;
+input[type="submit"], input[type="button"]{
+    background: #0089eb;
     border: none;
     color: #fff;
     cursor: pointer;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover{
+input[type="submit"]:hover, input[type="button"]:hover{
     background: #66ACF3;
 }
 #back{
-    position: absolute;
-    left: 90%;
+    height: 18px;
+    width: 36px;
+    display: inline-block;
 }
 
 a {
@@ -150,7 +151,7 @@ select {
 h1 {
     padding: 0px;
     margin: 0px;
-    color: #0066ff;
+    color: #0089eb;
     font-size: 28px;
     font-weight: bold;
 }
@@ -162,7 +163,7 @@ h1 a:visited {
 }
 
 h1 a:hover {
-    color: #0066ff;
+    color: #0089eb;
     text-decoration: none;
 }
 

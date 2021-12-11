@@ -17,7 +17,7 @@
 <table width="400" border="0" align="center" cellpadding="2" cellspacing="1" bgcolor="#000066">
     <tr id="title">
         <td height="25">
-            <div align="center" ><font color="#FFFFFF"><strong>请先登陆</strong></font></div>
+            <div align="center"><font color="#FFFFFF"><strong>请先登陆</strong></font></div>
         </td>
     </tr>
     <tr>
@@ -32,15 +32,16 @@
                     <tr>
                         <td colspan="2" align="center">
                             <b>密码:</b>
-                            <input name="passwd" type="password" id="yhmm" value="20010831" size="12"></td>
+                            <input name="passwd" type="password" id="yhmm" required size="12"></td>
                     </tr>
 
                     <tr>
 
                         <td align="center">
                             <input class="animated" type="submit" name="Submit" value="登陆"> &nbsp;&nbsp;&nbsp;
-                            <input class="animated" type="reset" name="Submit2" value="取消">
-                            <a href="index" id="back">返回</a>
+                            <a href="index" id="back">
+                                <input class="animated" type="button" name="Submit2" value="返回">
+                            </a>
                         </td>
                     </tr>
                 </table>

@@ -175,6 +175,17 @@
     * 更改了hearder的logo，新增矢量图
     * **完成收工前第一版 v1.1**
 
+  * $2021.12.11$
+
+    * 更改密码，防止所有人都可以进后台
+    * 更改login页面的返回按钮，可以返回主界面
+    * 更改后端的整体配色
+    * 添加了后端富文本提交
+      * 修改了文章内容的结构及样式
+      * 只支持纯文本，不支持图片及视频
+    * 修改了input标签设置为disabled无法提交的bug，更改为readonly
+    * 修改update和save的servlet的重定向
+
 * ### <font color=#000000 size=4 face=粗体>项目要求</font>
 
   基于 HTML/CSS/JS/Servlet/JDBC 等技术完成以下设计内容 

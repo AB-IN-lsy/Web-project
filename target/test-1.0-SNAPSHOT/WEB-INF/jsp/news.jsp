@@ -89,7 +89,7 @@
             </div>
             <ul>
                 <c:forEach items="${news}" var="n" varStatus="i">
-                    <c:if test="${i.count > 1}">
+                    <c:if test="${i.count > 1 and i.count <= 4}">
                         <li>
                             <span><fmt:formatDate
                                     pattern="yyyy-MM-dd"

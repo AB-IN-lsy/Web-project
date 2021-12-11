@@ -45,8 +45,8 @@ public class UpdateServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        RequestDispatcher rd = request.getRequestDispatcher("/findall");
-        rd.forward(request, response);
-
+        response.sendRedirect(request.getContextPath() + "/findall");
+//        RequestDispatcher rd = request.getRequestDispatcher("/findall");
+//        rd.forward(request, response);
     }
 }
