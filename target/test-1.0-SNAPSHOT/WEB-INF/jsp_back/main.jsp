@@ -49,7 +49,7 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
     <div id="mainWrapper">
         <div id="content" class="content-wide">
             <form action="search" method="post">
-                姓名：<input type="text" name="author"/>
+                作者：<input type="text" name="author"/>
                 邮件：<input type="text" name="email"/>
                 内容：<input type="text" name="content"/>
                 <a><input type="submit" value="查找"/></a>

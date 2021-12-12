@@ -56,6 +56,9 @@
             </div>
         </section>
     </div>
+    <div id="QR">
+        <%@include file="/WEB-INF/jsp/QR.jsp" %>
+    </div>
     <div id="footer">
         <%@include file="/WEB-INF/jsp/footer.jsp" %>
     </div>
