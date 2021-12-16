@@ -1223,7 +1223,6 @@ nav .Inav {
     -moz-opacity: 0;
     opacity: 0;
     filter: alpha(opacity=0);
-    -webkit-opacity: 0;
 }
 
 .othersBase .right a:hover em {

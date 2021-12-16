@@ -8,7 +8,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>${n.nLabel }</title>
+    <title>${n.nTitle }</title>
     <link rel="stylesheet" type="text/css" href="<%=path%>/css/index.css"/>
     <link
             rel="stylesheet"
@@ -40,10 +40,10 @@
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
-                <a href="news">新闻动态</a> > ${n.nLabel }</span></div>
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href=".">首页</a> >
+                <a href="news">新闻动态</a> > ${n.nTitle }</span></div>
             <div class="title">
-                <p id="two">${n.nLabel }</p>
+                <p id="two">${n.nTitle }</p>
                 <hr/>
             </div>
             <div class="title03">

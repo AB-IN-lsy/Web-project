@@ -8,7 +8,7 @@
 <!--
 此部分是footer
 版本: 定义了僵硬的灯笼，对接gif.js 2021-11-19
-     设置了灯笼的Javascript: scroll 2021-11-19
+设置了灯笼的Javascript: scroll 2021-11-19
 -->
 
 <%@ page pageEncoding="UTF-8" %>
@@ -46,7 +46,6 @@
                 <dd><a href="javascript:" title="">科研项目</a></dd>
                 <dd><a href="javascript:" title="">科研机构</a></dd>
                 <dd><a href="javascript:" title="">科研合作</a></dd>
-                <dd><a href="javascript:" title="">学术交流</a></dd>
             </dl>
             <dl>
                 <dt><em>招生就业</em><span>employment</span></dt>
@@ -64,15 +63,17 @@
                 <dd><a href="javascript:">使用信息</a></dd>
                 <dd><a href="javascript:">一流大学建设方案</a></dd>
             </dl>
-            <div class="QRBtn">
-                <img
-                        class="load"
-                        height="85"
-                        src="https://oss.ab-in.cn/images/QRcode.jpg"
-                        width="85"
-                /><span>扫描关注官方微信号</span
-            ><a href="javascript:void(0)" id="BtnQRMore">更多二维码</a>
-            </div>
+            <dl>
+                <div class="QRBtn">
+                    <img
+                            class="load"
+                            height="85"
+                            src="https://oss.ab-in.cn/images/QRcode.jpg"
+                            width="85"
+                    /><span>扫描关注官方微信号</span
+                ><a href="javascript:void(0)" id="BtnQRMore">更多二维码</a>
+                </div>
+            </dl>
             <div class="clear"></div>
         </div>
         <div class="clear"></div>
@@ -112,6 +113,7 @@
             <option value="https://ssh.ab-in.cn">AB-IN ssh</option>
             <option value="https://kod.ab-in.cn">AB-IN kod</option>
             <option value="https://game.ab-in.cn">AB-IN game</option>
+            <option value="https://tomcat.ipangbo.cn/web">Pangbo's web</option>
         </select>
     </div>
     <div>

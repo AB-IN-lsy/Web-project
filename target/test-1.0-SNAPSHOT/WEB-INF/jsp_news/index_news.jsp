@@ -44,7 +44,7 @@
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href=".">首页</a> >
         新闻动态</span></div>
             <div class="title">
                 <p id="one">新闻动态</p>
@@ -58,14 +58,14 @@
                             <div class="textbox-title">
 
                                 <div class="textbox-label"><a href="getnews?nid=${n.nId }">
-                                    [标题：${n.nLabel} ]
+                                    [标题：${n.nTitle} ]
                                 </a>
                                     [发布者:${n.nAuthor} ][发布日期:<fmt:formatDate
                                             pattern="yyyy-MM-dd"
                                             value="${n.insertTime}"/> ]
                                 </div>
                             </div>
-                            <div class="textbox-content">${n.nContent }</div>
+                            <div class="textbox-content">${n.nLabel }</div>
 
                             <div class="textbox-bottom">邮箱: ${n.nEmail}</div>
                         </div>

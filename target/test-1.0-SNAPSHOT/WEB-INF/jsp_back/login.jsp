@@ -39,7 +39,7 @@
 
                         <td align="center">
                             <input class="animated" type="submit" name="Submit" value="登陆"> &nbsp;&nbsp;&nbsp;
-                            <a href="index" id="back">
+                            <a href="." id="back">
                                 <input class="animated" type="button" name="Submit2" value="返回">
                             </a>
                         </td>

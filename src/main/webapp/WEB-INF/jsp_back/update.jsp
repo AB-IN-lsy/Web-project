@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="findall">文章首页</a></li>
                     <li><a href="write">添加文章</a></li>
-                    <li><a href="index">返回首页</a></li>
+                    <li><a href=".">返回首页</a></li>
                 </ul>
             </div>
 
@@ -42,9 +42,15 @@
                             <li>作者:
                                 <input name="author" type="text" id="author" value="${news.nAuthor}" readonly   ></li>
                             <li>标题:
-                                <input name="label" type="text" id="label" value="${news.nLabel}"></li>
+                                <input name="title" type="text" id="title1" value="${news.nTitle}"></li>
                             <li>邮箱:
                                 <input name="email" type="text" id="email" value="${news.nEmail}"></li>
+                            <li>简介:
+                                <div id="div2">
+                                    <p>${news.nLabel}</p>
+                                </div>
+                            </li>
+                            <textarea id="text2" name="label" cols="10" rows="20" hidden></textarea>
                             <li>内容:
                                 <div id="div1">
                                     <p>${news.nContent}</p>
@@ -71,14 +77,21 @@
 <script src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script>
 <script type="text/javascript">
     const E = window.wangEditor
-    const editor = new E('#div1')
+    const editor1 = new E('#div1')
     const $text1 = $('#text1')
-    editor.config.onchange = function (html) {
+    const editor2 = new E('#div2')
+    const $text2 = $('#text2')
+    editor1.config.onchange = function (html) {
         // 第二步，监控变化，同步更新到 textarea
         $text1.val(html)
     }
-    editor.create()
-    // 第一步，初始化 textarea 的值
-    $text1.val(editor.txt.html())
+    editor2.config.onchange = function (html) {
+        // 第二步，监控变化，同步更新到 textarea
+        $text2.val(html)
+    }
+    editor1.create()
+    editor2.create()
+    $text1.val(editor1.txt.html())
+    $text2.val(editor2.txt.html())
 </script>
 </html>

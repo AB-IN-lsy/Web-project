@@ -55,6 +55,8 @@
     text-align: justify-all;
     font-size: 16px;
     line-height: 24px;
+    width: 850px;
+    margin: auto;
 }
 
 
@@ -62,7 +64,7 @@
     border: solid 1px #00785A;
     padding: 1px;
     margin-bottom: 10px;
-
+    overflow: hidden;
 }
 
 .textbox-title {

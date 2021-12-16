@@ -86,26 +86,31 @@ $(function () {
         $current = parseInt($obj.data("num"), 10);
         $Index = $current - 1;
         $LiSize = $obj.find("li").size();
-        $BaseWidth = Kunyi.BaseMark.width();
+        $BaseWidth = $(".doctorsBase .contents").width();
+        // $BaseWidth = Kunyi.BaseMark.width();
         $Size = 0;
         $w = 0;
         $plus = 0;
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 5);
-            $w = 240 * 5;
+            $w = 245 * 5;
             $plus = 55;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 4);
-            $w = (240 + 6) * 4;
+            $w = (240 + 8) * 4;
             $plus = 42;
         } else {
             $Size = Math.ceil($LiSize / 6);
             $w = (240 + 12) * 6;
+            // 更改$w，2021.12.6
             $plus = 55;
         }
         /*
         这里的plus与下面的专业的是不同的，调试了好久，因为除数不同了，导致plus的不同，bug已修复
         by AB-IN 2021/11/20
+        上面说的一半对，还有是一开始的width引用错了，导致所用的都是按照width>=1200做的
+        现已调整
+        by AB-IN 2021/12/16
          */
         if ($Index >= 0) {
             $obj.data("num", $Index);
@@ -124,21 +129,23 @@ $(function () {
         $current = parseInt($obj.data("num"), 10);
         $Index = $current + 1;
         $LiSize = $obj.find("li").size();
-        $BaseWidth = Kunyi.BaseMark.width();
+        $BaseWidth = $(".doctorsBase .contents").width();
+        // $BaseWidth = Kunyi.BaseMark.width();
         $Size = 0;
         $w = 0;
         $plus = 0;
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 5);
-            $w = 240 * 5;
+            $w = 245 * 5;
             $plus = 55;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 4);
-            $w = (240 + 6) * 4;
+            $w = (240 + 8) * 4;
             $plus = 42;
         } else {
             $Size = Math.ceil($LiSize / 6);
             $w = (240 + 12) * 6;
+            // 更改$w，2021.12.6
             $plus = 55;
         }
         if ($Index < $Size) {
@@ -188,21 +195,25 @@ $(function () {
         $current = parseInt($obj.data("num"), 10);
         $Index = $current - 1;
         $LiSize = $obj.find("li").size();
-        $BaseWidth = Kunyi.BaseMark.width();
+        $BaseWidth = $(".officesBase .contents").width();
+        // $BaseWidth = Kunyi.BaseMark.width();
         $Size = 0;
         $w = 0;
         $plus = 0;
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 4);
-            $w = 300 * 4;
+            $w = 380 * 4;
             $plus = 30;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 3);
-            $w = 326 * 3;
+            $w = 332 * 3;
+            // 修复宽宽度太大导致漏了一个的bug
             $plus = 17;
         } else {
             $Size = Math.ceil($LiSize / 5);
-            $w = 300 * 5;
+            $w = 380 * 5;
+            // 修复宽度变小时，滑动的item长度不对的bug
+            // $w代表视窗长度，$plus代表回去的初始值，plus越小移动的越大，$w相反
             $plus = 30;
         }
         Kunyi.Index.hiddenLine.hide();
@@ -227,21 +238,24 @@ $(function () {
         $current = parseInt($obj.data("num"), 10);
         $Index = $current + 1;
         $LiSize = $obj.find("li").size();
-        $BaseWidth = Kunyi.BaseMark.width();
+        $BaseWidth = $(".officesBase .contents").width();
+        // $BaseWidth = Kunyi.BaseMark.width();
         $Size = 0;
         $w = 0;
         $plus = 0;
         if ($BaseWidth >= 1200 && $BaseWidth < 1500) {
             $Size = Math.ceil($LiSize / 4);
-            $w = 300 * 4;
+            $w = 380 * 4;
             $plus = 30;
         } else if ($BaseWidth >= 980 && $BaseWidth < 1200) {
             $Size = Math.ceil($LiSize / 3);
-            $w = 326 * 3;
+            $w = 332 * 3;
             $plus = 17;
         } else {
             $Size = Math.ceil($LiSize / 5);
-            $w = 300 * 5;
+            $w = 380 * 5;
+            // 修复宽度变小时，滑动的item长度不对的bug
+            // $w代表视窗长度，$plus代表回去的初始值，plus越小移动的越大，$w相反
             $plus = 30;
         }
         Kunyi.Index.hiddenLine.hide();

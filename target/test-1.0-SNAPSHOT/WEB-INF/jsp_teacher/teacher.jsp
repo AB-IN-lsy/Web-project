@@ -40,7 +40,7 @@
     </div>
     <div id="content">
         <section class="BaseMark PartBanner">
-            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href="index">首页</a> >
+            <div class="bread"><br/>您所在的位置&nbsp;&nbsp;&nbsp;<span><a href=".">首页</a> >
                 <a href="teacher">学校团队</a> > ${teacher.tName }</span></div>
             <div class="title">
                 <p id="two">${teacher.tName }</p>

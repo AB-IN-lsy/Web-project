@@ -27,9 +27,7 @@
             <em>计科专业</em> <span>Required Course</span>
         </div>
         <div class="tools">
-            <a class="ASwitch" href="javascript:;" id="OSearchSwitch"
-            >快速查找</a
-            >
+            <a class="ASwitch" href="javascript:;" id="OSearchSwitch">快速查找</a>
             <a class="Amore" href="major" target="_blank">更多 ></a>
             <a class="Aprev" href="javascript:;"></a>
             <a class="Anext" href="javascript:;"></a>

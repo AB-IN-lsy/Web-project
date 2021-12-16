@@ -48,6 +48,7 @@ public class GetNewsServlet extends HttpServlet {
                     news.setnContent(rs.getString("n_content"));
                     news.setnEmail(rs.getString("n_email"));
                     news.setnLabel(rs.getString("n_label"));
+                    news.setnTitle(rs.getString("n_title"));
                     news.setInsertTime(rs.getTimestamp("create_time"));
                     news.setUpdateTime(rs.getTimestamp("update_time"));
                 }

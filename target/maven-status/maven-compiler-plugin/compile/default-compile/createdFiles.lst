@@ -15,7 +15,6 @@ com\controller\SearchTypeServlet.class
 com\controller\SaveServlet.class
 com\controller\NewsServlet.class
 com\controller\TeacherServlet.class
-com\controller\IndexServlet.class
 com\controller\GetLabNewsServlet.class
 com\entity\Major.class
 com\controller\GetTeacherServlet.class
@@ -26,4 +25,5 @@ com\controller\SearchServlet.class
 com\filter\EncodingFilter.class
 com\controller\FindAllServlet.class
 com\entity\User.class
+com\filter\IndexFilter.class
 com\entity\News.class

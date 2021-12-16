@@ -41,10 +41,10 @@
     </div>
     <div class="BaseMark logoBase flex">
         <div class="header-logo" title="东北林业大学计算机科学与技术专业">
-            <a href="index" class="full-box-link"></a>
+            <a href="." class="full-box-link"></a>
         </div>
         <div class="header-name" title="东北林业大学计算机科学与技术专业">
-            <a href="index" class="full-box-link"></a>
+            <a href="." class="full-box-link"></a>
         </div>
         <div class="searchBase">
             <form action="searchType" method="post">

@@ -38,9 +38,10 @@ public class SaveServlet extends HttpServlet {
         String label = request.getParameter("label");
         String author = request.getParameter("author");
         String email = request.getParameter("email");
+        String title = request.getParameter("title");
         String content = request.getParameter("content");
         String nid = request.getParameter("nid");
-        String sql = "insert into news (n_label,n_author,n_email,n_content) values(?,?,?,?)";
+        String sql = "insert into news (n_label,n_author,n_email,n_content,n_title) values(?,?,?,?,?)";
 
         try (Connection conn = DataSourceUtils.getConnection();
              PreparedStatement st = conn.prepareStatement(sql)) {
@@ -48,6 +49,7 @@ public class SaveServlet extends HttpServlet {
             st.setString(2, author);
             st.setString(3, email);
             st.setString(4, content);
+            st.setString(4, title);
             st.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

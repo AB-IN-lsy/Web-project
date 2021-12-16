@@ -41,7 +41,7 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
             <ul>
                 <li><a href="findall">文章首页</a></li>
                 <li><a href="write">添加文章</a></li>
-                <li><a href="index">返回首页</a></li>
+                <li><a href=".">返回首页</a></li>
             </ul>
         </div>
     </div>
@@ -60,7 +60,7 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
                 <div class="textbox">
                     <div class="textbox-title">
 
-                        <div class="textbox-label">[标题：${n.nLabel} ][发布者:${n.nAuthor} ][发布日期:<fmt:formatDate
+                        <div class="textbox-label">[标题：${n.nTitle} ][发布者:${n.nAuthor} ][发布日期:<fmt:formatDate
                                 pattern="yyyy-MM-dd"
                                 value="${n.insertTime}"/> ]</div>
                     </div>

@@ -40,6 +40,7 @@ public class FindAllServlet extends HttpServlet {
                         rs.getString("n_content"),
                         rs.getString("n_email"),
                         rs.getString("n_label"),
+                        rs.getString("n_title"),
                         rs.getTimestamp("create_time"),
                         rs.getTimestamp("update_time"));
                 news.add(news1);

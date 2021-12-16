@@ -24,8 +24,8 @@
     <div class="toolsBase">
         <div class="title"><em>教师团队</em><span>Teacher</span></div>
         <div class="tools"><a class="ASwitch" href="javascript:;" id="DSearchSwitch">快速查找</a>
-            <form action="#" class="search" method="get">
-                <input name="Type" type="hidden" value="2"/>
+            <form action="searchType" class="search" method="post">
+                <input name="Type" type="hidden" value="3"/>
                 <input autocomplete="off" class="animated" maxlength="28" name="SearchWords" placeholder="请输入查找的名字"
                        type="text" value=""/>
                 <input class="btn" type="submit" value=""/></form>

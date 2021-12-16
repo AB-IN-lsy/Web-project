@@ -14,17 +14,27 @@ public class News {
     private String nContent;
     private String nEmail;
     private String nLabel;
+    private String nTitle;
     private Date insertTime;
     private Date updateTime;
 
-    public News(int nId, String nAuthor, String nContent, String nEmail, String nLabel, Date insertTime, Date updateTime) {
+    public News(int nId, String nAuthor, String nContent, String nEmail, String nLabel, String nTitle, Date insertTime, Date updateTime) {
         this.nId = nId;
         this.nAuthor = nAuthor;
         this.nContent = nContent;
         this.nEmail = nEmail;
         this.nLabel = nLabel;
+        this.nTitle = nTitle;
         this.insertTime = insertTime;
         this.updateTime = updateTime;
+    }
+
+    public String getnTitle() {
+        return nTitle;
+    }
+
+    public void setnTitle(String nTitle) {
+        this.nTitle = nTitle;
     }
 
     public News() {

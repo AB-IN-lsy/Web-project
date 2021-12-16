@@ -25,22 +25,22 @@
     <div class="Banners">
         <ul class="AnimUl">
             <li>
-                <a href="javascript:" title=""
+                <a href="getnews?nid=1" title=""
                 ><img alt="" src="https://oss.ab-in.cn/images/pic1.jpg"
                 /></a>
             </li>
             <li>
-                <a href="javascript:" title=""
+                <a href="getnews?nid=2" title=""
                 ><img alt="" src="https://oss.ab-in.cn/images/pic2.jpg"
                 /></a>
             </li>
             <li>
-                <a href="javascript:" title=""
+                <a href="getnews?nid=3" title=""
                 ><img alt="" src="https://oss.ab-in.cn/images/pic3.jpg"
                 /></a>
             </li>
             <li>
-                <a href="javascript:" title=""
+                <a href="getnews?nid=4" title=""
                 ><img alt="" src="https://oss.ab-in.cn/images/pic4.png"
                 /></a>
             </li>

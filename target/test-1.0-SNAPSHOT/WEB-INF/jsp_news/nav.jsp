@@ -26,7 +26,8 @@
 <nav>
     <div class="navBase" >
         <div class="quickMenuBase" data-type="0">
-            <div class="quickMenu01"><a href="index" target="_self"></a> 走&nbsp;进&nbsp;计 科</div>
+            <div class="quickMenu01"><a href="." target="_self"></a> 走&nbsp;进&nbsp;计 科</div>
+            <div class="quickMenu02 animated"></div>
             <div class="quickMenus" >
                 <ul class="firstUl">
                     <li class="first">
@@ -114,7 +115,7 @@
 
         <div class="nav Inav">
             <ul>
-                <li class="PMenu"><a class="PAMenu" href="index" title="计科首页">计科首页</a></li>
+                <li class="PMenu"><a class="PAMenu" href="." title="计科首页">计科首页</a></li>
                 <li class="PMenu"><img class="animated" height="8" src="https://oss.ab-in.cn/images/ico_014.png" width="15"/>
                     <a class="PAMenu" href="https://aulin.nefu.edu.cn/" id="Nav_AMenu0" title="学院指南">学院指南</a>
                     <div class="navboxBase">
@@ -339,7 +340,7 @@
                                             <dd><em><fmt:formatDate
                                                     pattern="yyyy-MM-dd"
                                                     value="${n.insertTime}"/></em>
-                                                <a href="getnews?nid=${n.nId }">${n.nLabel}</a></dd>
+                                                <a href="getnews?nid=${n.nId }">${n.nTitle}</a></dd>
                                         </c:forEach>
                                     </dl>
                                     <div class="BottomHidden"></div>

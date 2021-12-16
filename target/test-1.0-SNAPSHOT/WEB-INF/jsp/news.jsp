@@ -81,7 +81,7 @@
                             <span><fmt:formatDate
                                     pattern="yyyy-MM-dd"
                                     value="${n.insertTime}"/></span><a href="getnews?nid=${n.nId }" target="_blank"
-                        >${n.nLabel}</a>
+                        >${n.nTitle}</a>
                         </div>
                     </c:if>
                 </c:forEach>
@@ -95,7 +95,7 @@
                                     pattern="yyyy-MM-dd"
                                     value="${n.insertTime}"/></span>
                             <a href="getnews?nid=${n.nId }" target="_blank"
-                            >${n.nLabel}</a>
+                            >${n.nTitle}</a>
                         </li>
                     </c:if>
                 </c:forEach>

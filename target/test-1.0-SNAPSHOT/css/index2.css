@@ -1933,15 +1933,14 @@ div#anpNews span.disabled {
         width: 98px;
     }
 
-    footer .menusBase {
-        padding: 60px 0px 0px 0px;
-    }
+    /*footer .menusBase dl {*/
+    /*    margin-right: 86px;*/
+    /*    height: 182px;*/
+    /*}*/
 
-    footer .menusBase dl {
-        margin-right: 86px;
-        height: 182px;
+    .QRBtn{
+        display: none;
     }
-
     footer .newsPaper {
         border-left: none;
         width: 100%;

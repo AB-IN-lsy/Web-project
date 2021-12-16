@@ -187,6 +187,23 @@
     * 修改update和save的servlet的重定向
     * **完成收工前第三版 v1.2**
 
+  * $2021.12.16$
+
+    * 修改主页url
+      * 将index.jsp提出来，并设置filter进行监听，这样就可以实现不用servlet跳转实现动态页面了
+      * 修改其他板块访问主页的参数，全部改为'.'
+    * 修改新闻板块
+      * 重写了news类和其servlet，加入了title属性
+      * 修改了news的save和update，并新增了一个富文本编辑器，用来提交简介
+      * 更改了news的第三界面的布局，新增了图片
+    * 修改了header布局，让视窗width缩小时发生变化
+    * 修改了teacher和major模块的按钮滑动
+      * 修改了固定width的bug，修改后js获取的width随窗口的变化而变化
+      * 修改了滑动left的值，使不出现元素的漏边
+    * 修改了footer的布局，新增二维码在页面缩小时消失
+    * 修改了教师模块的搜索框bug
+    * **完成收工前第三版 v1.3**
+
 * ### <font color=#000000 size=4 face=粗体>项目要求</font>
 
   基于 HTML/CSS/JS/Servlet/JDBC 等技术完成以下设计内容 

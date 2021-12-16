@@ -1,5 +1,4 @@
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\TeacherServlet.java
-D:\Code\Web\web-workplace\test\src\main\java\com\controller\IndexServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\Major.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\NewsServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\FindAllServlet.java
@@ -10,6 +9,7 @@ D:\Code\Web\web-workplace\test\src\main\java\com\controller\GetTeacherServlet.ja
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\Laboratory.java
 D:\Code\Web\web-workplace\test\src\main\java\com\entity\News.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\LabServlet.java
+D:\Code\Web\web-workplace\test\src\main\java\com\filter\IndexFilter.java
 D:\Code\Web\web-workplace\test\src\main\java\com\util\DataSourceUtils.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\LoginServlet.java
 D:\Code\Web\web-workplace\test\src\main\java\com\controller\UpdateServlet.java
