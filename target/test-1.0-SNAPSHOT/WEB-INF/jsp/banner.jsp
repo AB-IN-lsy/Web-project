@@ -40,7 +40,7 @@
                 /></a>
             </li>
             <li>
-                <a href="getnews?nid=4" title=""
+                <a href="getlabnews?alid=2" title=""
                 ><img alt="" src="https://oss.ab-in.cn/images/pic4.png"
                 /></a>
             </li>

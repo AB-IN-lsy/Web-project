@@ -28,6 +28,8 @@ pss:借鉴的老师代码应该不算抄袭吧。。。
     <title>Main</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="<%=path%>/css/web.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://oss.ab-in.cn/images/logo1.png"
+          type="image/x-icon">
 </head>
 <body>
 <div id="wrapper">

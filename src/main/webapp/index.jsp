@@ -16,7 +16,7 @@
 希望老师可以满意
 （我发现我写项目时，时间过的比我打ACM还快）
 我是 AB-IN 也是liusy
-            落笔 2021/12/5
+落笔 2021/12/5
 
 此部分是总的jsp，汇总所有的jsp文件
 User manual:
@@ -39,7 +39,9 @@ Bug List:
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CST</title>
+    <title>Aulin CST</title>
+    <link rel="icon" href="https://oss.ab-in.cn/images/logo1.png"
+          type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link
             rel="stylesheet"

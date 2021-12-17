@@ -32,6 +32,8 @@
     <script src="<%=path%>/js/jq.js" type="text/javascript"></script>
     <script src="<%=path%>/js/index.js" type="text/javascript"></script>
     <script src="<%=path%>/js/gif.js" type="text/javascript"></script>
+    <link rel="icon" href="https://oss.ab-in.cn/images/logo1.png"
+          type="image/x-icon">
 </head>
 
 <body>
