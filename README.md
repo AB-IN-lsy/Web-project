@@ -4,9 +4,11 @@
 
 >  <font color=#000000 size=4 face=粗体>服务器端部署</font>
 >
-> 记录了项目部署服务器端遇到的问题
+>  记录了项目部署服务器端遇到的问题
 >
-> [宝塔war包放入webapps无法访问_NEFU AB-IN's Blog-CSDN博客](https://blog.csdn.net/qq_45859188/article/details/121353247)
+>  [宝塔war包放入webapps无法访问_NEFU AB-IN's Blog-CSDN博客](https://blog.csdn.net/qq_45859188/article/details/121353247)
+>
+>  [this version of the Java Runtime only recognizes class file versions up to 52.0_NEFU AB-IN's Blog-CSDN博客](https://blog.csdn.net/qq_45859188/article/details/122003369?spm=1001.2014.3001.5501)
 
 [![Blog page](https://img.shields.io/badge/Blog-page-red.svg?style=flat)](https://www.ab-in.cn) [![GPLV3 License](https://img.shields.io/badge/Licence-GPLV3-green.svg?style=flat)](https://github.com/AB-IN-lsy/web-project/blob/master/LICENSE) [![Home page](https://img.shields.io/badge/home-page-yellow.svg?style=flat)](https://web.ab-in.cn) <a href="https://github.com/AB-IN-lsy/web-project/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AB-IN-lsy/web-project"></a>
 
@@ -20,11 +22,11 @@
 
 * ### <font color=#000000 size=4 face=粗体>项目时长</font>
 
-  ![img1](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img1.png)
+  ![img1](https://oss.ab-in.cn/images/img1.png)
 
-  ![img2](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img2.png)
+  ![img2](https://oss.ab-in.cn/images/img2.png)
 
-  ![img4](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img4.png)
+  ![img4](https://oss.ab-in.cn/images/img4.png)
 
 * ### <font color=#000000 size=4 face=粗体>项目日志</font>
 
@@ -34,7 +36,7 @@
 
     * 搭建好整体项目框架
 
-      ![img3](https://github.com/AB-IN-lsy/Web-project/blob/master/asserts/img3.png)
+      ![img3](https://oss.ab-in.cn/images/img3.png)
 
   * 2021.11.15 
 
