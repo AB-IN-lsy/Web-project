@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-    <Resource name="jdbc/MySQL" type="javax.sql.DataSource" maxTotal="100" maxIdle="30" maxWaitMillis="10000" initialSize="5" username="2019210173" password="2019210173" driverClassName="com.mysql.cj.jdbc.Driver" url="jdbc:mysql://123.57.27.150:3309/2019210173?serverTimezone=Asia/Shanghai"/>
+    <Resource name="jdbc/MySQL" type="javax.sql.DataSource" maxTotal="100" maxIdle="30" maxWaitMillis="10000" initialSize="5" username="web_ab_in_cn" password="lsy20010831" driverClassName="com.mysql.cj.jdbc.Driver" url="jdbc:mysql://47.99.185.254:3306/web_ab_in_cn?serverTimezone=Asia/Shanghai"/>
 </Context>

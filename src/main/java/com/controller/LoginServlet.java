@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
         String passwd = req.getParameter("passwd");
         User user = new User(account, passwd);
         String relUrl;
-        if("admin".equals(account) && "20010831".equals(passwd)){
+        if("admin".equals(account) && "admin".equals(passwd)){
             req.getSession().setAttribute("user", user);
             relUrl = "/findall";
         }
